@@ -1,109 +1,73 @@
-import numpy as np
+import time
+import logging
+from logger.set_logger import setup_logger
+from model.loss import Loss
 import torch
-from torchvision.utils import make_grid
-from base import BaseTrainer
-from utils import inf_loop, MetricTracker
+import sys
+sys.path.append('../')
 
 
-class Trainer(BaseTrainer):
-    """
-    Trainer class
-    """
-    def __init__(self, model, criterion, metric_ftns, optimizer, config, data_loader,
-                 valid_data_loader=None, lr_scheduler=None, len_epoch=None):
-        super().__init__(model, criterion, metric_ftns, optimizer, config)
-        self.config = config
-        self.data_loader = data_loader
-        if len_epoch is None:
-            # epoch-based training
-            self.len_epoch = len(self.data_loader)
-        else:
-            # iteration-based training
-            self.data_loader = inf_loop(data_loader)
-            self.len_epoch = len_epoch
-        self.valid_data_loader = valid_data_loader
-        self.do_validation = self.valid_data_loader is not None
-        self.lr_scheduler = lr_scheduler
-        self.log_step = int(np.sqrt(data_loader.batch_size))
+class Trainer(object):
+    def __init__(self, train_dataloader, val_dataloader, optimizer, DPCL, opt):
+        super(Trainer).__init__()
+        self.train_dataloader = train_dataloader
+        self.val_dataloader = val_dataloader
+        self.num_spks = opt['num_spks']
+        if opt['is_gpu']:
+            self.device = torch.device('cuda')
+        self.dpcl = DPCL.to(self.device)
+        self.optimizer = optimizer
+        if opt['resume']['state']:
+            self.resume_state = torch.load(
+                opt['resume']['path'], map_location='cpu')
+        self.print_freq = opt['logger']['print_freq']
+        setup_logger(opt['logger']['name'], opt['logger']['path'],
+                     screen=opt['logger']['screen'], tofile=opt['logger']['tofile'])
+        self.logger = logging.getLogger(opt['logger']['name'])
 
-        self.train_metrics = MetricTracker('loss', *[m.__name__ for m in self.metric_ftns], writer=self.writer)
-        self.valid_metrics = MetricTracker('loss', *[m.__name__ for m in self.metric_ftns], writer=self.writer)
-
-    def _train_epoch(self, epoch):
-        """
-        Training logic for an epoch
-
-        :param epoch: Integer, current training epoch.
-        :return: A log that contains average loss and metric in this epoch.
-        """
-        self.model.train()
-        self.train_metrics.reset()
-        for batch_idx, (data, target) in enumerate(self.data_loader):
-            data, target = data.to(self.device), target.to(self.device)
-
+    def train(self, epoch):
+        self.dpcl.train()
+        num_batchs = len(self.train_dataloader)
+        total_loss = None
+        num_index = 1
+        start_time = time.time()
+        for mix_wave, target_waves, non_slient in self.train_dataloader:
+            mix_wave = mix_wave.to(self.device)
+            target_waves = mix_wave.to(self.device)
+            non_slient = non_slient.to(self.device)
+            mix_embs = self.dpcl(mix_wave)
+            l = Loss(mix_embs, target_waves, non_slient, self.num_spks)
+            epoch_loss = l.loss()
+            total_loss += epoch_loss
             self.optimizer.zero_grad()
-            output = self.model(data)
-            loss = self.criterion(output, target)
-            loss.backward()
+            epoch_loss.backward()
             self.optimizer.step()
+            if num_index % self.print_freq == 0:
+                message = '<epoch:{:3d}, iter:{:8,d}, lr:{:.3e}>, loss:{:.3f}'.format(
+                    epoch, num_index, self.optimizer.param_groups[0]['lr'], total_loss/num_index)
+                self.logger.info(message)
+        end_time = time.time()
+        total_loss = total_loss/num_batchs
+        message = '<epoch:{:3d}, iter:{:8,d}, lr:{:.3e}, loss:{:.3f}, Total time:{:.3f} min> '.format(
+            epoch, num_batchs, self.optimizer.param_groups[0]['lr'], total_loss, (end_time-start_time)/60)
+        self.logger.info(message)
 
-            self.writer.set_step((epoch - 1) * self.len_epoch + batch_idx)
-            self.train_metrics.update('loss', loss.item())
-            for met in self.metric_ftns:
-                self.train_metrics.update(met.__name__, met(output, target))
-
-            if batch_idx % self.log_step == 0:
-                self.logger.debug('Train Epoch: {} {} Loss: {:.6f}'.format(
-                    epoch,
-                    self._progress(batch_idx),
-                    loss.item()))
-                self.writer.add_image('input', make_grid(data.cpu(), nrow=8, normalize=True))
-
-            if batch_idx == self.len_epoch:
-                break
-        log = self.train_metrics.result()
-
-        if self.do_validation:
-            val_log = self._valid_epoch(epoch)
-            log.update(**{'val_'+k : v for k, v in val_log.items()})
-
-        if self.lr_scheduler is not None:
-            self.lr_scheduler.step()
-        return log
-
-    def _valid_epoch(self, epoch):
-        """
-        Validate after training an epoch
-
-        :param epoch: Integer, current training epoch.
-        :return: A log that contains information about validation
-        """
-        self.model.eval()
-        self.valid_metrics.reset()
+    def validation(self, epoch):
+        self.dpcl.eval()
+        num_batchs = len(self.val_dataloader)
+        num_index = 1
+        total_loss = None
+        start_time = time.time()
         with torch.no_grad():
-            for batch_idx, (data, target) in enumerate(self.valid_data_loader):
-                data, target = data.to(self.device), target.to(self.device)
+            for mix_wave, target_waves, non_slient in self.val_dataloader:
+                mix_embs = self.dpcl(mix_wave)
+                l = Loss(mix_embs, target_waves, non_slient, self.num_spks)
+                epoch_loss = l.loss()
+                total_loss += epoch_loss
+                if num_index % self.print_freq == 0:
+                    message = '<epoch:{:3d}, iter:{:8,d}, lr:{:.3e}>, loss:{:.3f}'.format(
+                        epoch, num_index, self.optimizer.param_groups[0]['lr'], total_loss/num_index)
+                    self.logger.info(message)
+        end_time = time.time()
+        
 
-                output = self.model(data)
-                loss = self.criterion(output, target)
-
-                self.writer.set_step((epoch - 1) * len(self.valid_data_loader) + batch_idx, 'valid')
-                self.valid_metrics.update('loss', loss.item())
-                for met in self.metric_ftns:
-                    self.valid_metrics.update(met.__name__, met(output, target))
-                self.writer.add_image('input', make_grid(data.cpu(), nrow=8, normalize=True))
-
-        # add histogram of model parameters to the tensorboard
-        for name, p in self.model.named_parameters():
-            self.writer.add_histogram(name, p, bins='auto')
-        return self.valid_metrics.result()
-
-    def _progress(self, batch_idx):
-        base = '[{}/{} ({:.0f}%)]'
-        if hasattr(self.data_loader, 'n_samples'):
-            current = batch_idx * self.data_loader.batch_size
-            total = self.data_loader.n_samples
-        else:
-            current = batch_idx
-            total = self.len_epoch
-        return base.format(current, total, 100.0 * current / total)

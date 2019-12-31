@@ -34,6 +34,9 @@ class dataloader(object):
         self.dataload = DataLoader(
             dataset, batch_size=batch_size, num_workers=1, shuffle=shuffle, collate_fn=self.collate)
         self.cmvn = pickle.load(open(cmvn_file, 'rb'))
+    
+    def __len__(self):
+        return len(self.dataload)
 
     def transform(self, mix_wave, target_waves):
         frames = mix_wave.shape[0]
@@ -46,7 +49,7 @@ class dataloader(object):
             "mix_wave": torch.tensor(mix_wave, dtype=torch.float32),
             "target_waves": torch.tensor(target_waves, dtype=torch.float32)
         }
-
+    
     def collate(self, batchs):
         trans = sorted([self.transform(mix_wave, target_waves)
                         for mix_wave, target_waves in batchs], key=lambda x: x["frames"], reverse=True)
@@ -69,5 +72,4 @@ if __name__ == "__main__":
                       AudioData.AudioData("/home/likai/data1/create_scp/cv_s2.scp", is_mag=True, is_log=True)]
     dataset = dataset(mix_reader, target_readers)
     dataloader = dataloader(dataset)
-    for i in dataloader:
-        print(i)
+    print(len(dataloader))
