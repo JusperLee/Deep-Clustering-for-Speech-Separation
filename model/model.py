@@ -50,8 +50,7 @@ class DPCL(nn.Module):
             print(x.shape)
 
         return x
-
-
+    
 if __name__ == "__main__":
     device = torch.device('cuda:0')
     a = torch.randn((11,129))

@@ -1,66 +1,74 @@
-import argparse
-import collections
-import torch
-import numpy as np
-import data_loader.data_loaders as module_data
-import model.loss as module_loss
-import model.metric as module_metric
-import model.model as module_arch
-from parse_config import ConfigParser
+import sys
+sys.path.append('./')
+
 from trainer import Trainer
+import torch
+import argparse
+from config import option
+import logging
+from logger import set_logger
+from model import model
+from data_loader import Dataloader, AudioData
 
 
-# fix random seeds for reproducibility
-SEED = 123
-torch.manual_seed(SEED)
-torch.backends.cudnn.deterministic = True
-torch.backends.cudnn.benchmark = False
-np.random.seed(SEED)
 
-def main(config):
-    logger = config.get_logger('train')
+def make_dataloader(opt):
+    # make train's dataloader
+    train_mix_reader = AudioData(
+        opt['datasets']['train']['dataroot_mix'], **opt['datasets']['audio_setting'])
+    train_target_readers = [AudioData(opt['datasets']['train']['dataroot_targets'][0], **opt['datasets']['audio_setting']),
+                            AudioData(opt['datasets']['train']['dataroot_targets'][1], **opt['datasets']['audio_setting'])]
+    train_dataset = Dataloader.dataset(train_mix_reader, train_target_readers)
+    train_dataloader = Dataloader.dataloader(
+        train_dataset, **opt['datasets']['dataloader_setting'])
 
-    # setup data_loader instances
-    data_loader = config.init_obj('data_loader', module_data)
-    valid_data_loader = data_loader.split_validation()
+    # make validation dataloader
+    val_mix_reader = AudioData(
+        opt['datasets']['val']['dataroot_mix'], **opt['datasets']['audio_setting'])
+    val_target_readers = [AudioData(opt['datasets']['val']['dataroot_targets'][0], **opt['datasets']['audio_setting']),
+                          AudioData(opt['datasets']['val']['dataroot_targets'][1], **opt['datasets']['audio_setting'])]
+    val_dataset = Dataloader.dataset(train_mix_reader, train_target_readers)
+    val_dataloader = Dataloader.dataloader(
+        train_dataset, **opt['datasets']['dataloader_setting'])
 
-    # build model architecture, then print to console
-    model = config.init_obj('arch', module_arch)
-    logger.info(model)
-
-    # get function handles of loss and metrics
-    criterion = getattr(module_loss, config['loss'])
-    metrics = [getattr(module_metric, met) for met in config['metrics']]
-
-    # build optimizer, learning rate scheduler. delete every lines containing lr_scheduler for disabling scheduler
-    trainable_params = filter(lambda p: p.requires_grad, model.parameters())
-    optimizer = config.init_obj('optimizer', torch.optim, trainable_params)
-
-    lr_scheduler = config.init_obj('lr_scheduler', torch.optim.lr_scheduler, optimizer)
-
-    trainer = Trainer(model, criterion, metrics, optimizer,
-                      config=config,
-                      data_loader=data_loader,
-                      valid_data_loader=valid_data_loader,
-                      lr_scheduler=lr_scheduler)
-
-    trainer.train()
+    return train_dataloader, val_dataloader
 
 
-if __name__ == '__main__':
-    args = argparse.ArgumentParser(description='PyTorch Template')
-    args.add_argument('-c', '--config', default=None, type=str,
-                      help='config file path (default: None)')
-    args.add_argument('-r', '--resume', default=None, type=str,
-                      help='path to latest checkpoint (default: None)')
-    args.add_argument('-d', '--device', default=None, type=str,
-                      help='indices of GPUs to enable (default: all)')
+def make_optimizer(params, opt):
+    optimizer = getattr(torch.optim, opt['optim']['name'])
+    if opt['optim']['name'] == 'Adam':
+        optimizer = optimizer(
+            params, lr=opt['optim']['lr'], weight_decay=opt['optim']['weight_decay'])
+    else:
+        optimizer = optimizer(params, lr=opt['optim']['lr'], weight_decay=opt['optim']
+                              ['weight_decay'], momentum=opt['optim']['momentum'])
+    
+    return optimizer
 
-    # custom cli options to modify configuration from default values given in json file.
-    CustomArgs = collections.namedtuple('CustomArgs', 'flags type target')
-    options = [
-        CustomArgs(['--lr', '--learning_rate'], type=float, target='optimizer;args;lr'),
-        CustomArgs(['--bs', '--batch_size'], type=int, target='data_loader;args;batch_size')
-    ]
-    config = ConfigParser.from_args(args, options)
-    main(config)
+def train():
+    parser = argparse.ArgumentParser(
+        description='Parameters for training Deep Clustering')
+    parser.add_argument('--opt', type=str, help='Path to option YAML file.')
+    args = parser.parse_args()
+    opt = option.parse(args.opt)
+    set_logger.setup_logger(opt['logger']['name'], opt['logger']['path'],
+                            screen=opt['logger']['screen'], tofile=opt['logger']['tofile'])
+    logger = logging.getLogger(opt['logger']['name'])
+
+    logger.info("Building the model of Deep Clustering")
+    dpcl = model.DPCL(**opt['DPCL'])
+
+    logger.info("Building the optimizer of Deep Clustering")
+    optimizer = make_optimizer(dpcl.parameters(),opt)
+
+    logger.info('Building the dataloader of Deep Clustering')
+    train_dataloader, val_dataloader = make_dataloader(opt)
+
+    logger.info('Building the Trainer of Deep Clustering')
+    trainer = Trainer(train_dataloader, val_dataloader, dpcl,optimizer,opt)
+    trainer.run()
+
+
+if __name__ == "__main__":
+    train()
+
