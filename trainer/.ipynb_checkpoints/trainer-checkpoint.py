@@ -65,7 +65,8 @@ class Trainer(object):
             mix_wave = mix_wave.to(self.device)
             target_waves = target_waves.to(self.device)
             non_slient = non_slient.to(self.device)
-            mix_embs = self.dpcl(mix_wave)
+            model = torch.nn.DataParallel(self.dpcl)
+            mix_embs = model(mix_wave)
             l = Loss(mix_embs, target_waves, non_slient, self.num_spks)
             epoch_loss = l.loss()
             total_loss += epoch_loss.item()
@@ -77,13 +78,12 @@ class Trainer(object):
 
             self.optimizer.step()
             if num_index % self.print_freq == 0:
-                message = '<epoch:{:d}, iter:{:d}, lr:{:.3e}, loss:{:.3f}>'.format(
+                message = '<epoch:{:3d}, iter:{:8,d}, lr:{:.3e}>, loss:{:.3f}'.format(
                     epoch, num_index, self.optimizer.param_groups[0]['lr'], total_loss/num_index)
                 self.logger.info(message)
-            num_index += 1
         end_time = time.time()
         total_loss = total_loss/num_batchs
-        message = '<epoch:{:d}, iter:{:d}, lr:{:.3e}, loss:{:.3f}, Total time:{:.3f} min> '.format(
+        message = '<epoch:{:3d}, iter:{:8,d}, lr:{:.3e}, loss:{:.3f}, Total time:{:.3f} min> '.format(
             epoch, num_batchs, self.optimizer.param_groups[0]['lr'], total_loss, (end_time-start_time)/60)
         self.logger.info(message)
         return total_loss
@@ -100,18 +100,19 @@ class Trainer(object):
                 mix_wave = mix_wave.to(self.device)
                 target_waves = target_waves.to(self.device)
                 non_slient = non_slient.to(self.device)
-                mix_embs = self.dpcl(mix_wave)
+                #mix_embs = self.dpcl(mix_wave)
+                model = torch.nn.DataParallel(self.dpcl)
+                mix_embs = model(mix_wave)
                 l = Loss(mix_embs, target_waves, non_slient, self.num_spks)
                 epoch_loss = l.loss()
                 total_loss += epoch_loss.item()
                 if num_index % self.print_freq == 0:
-                    message = '<epoch:{:d}, iter:{:d}, lr:{:.3e}, loss:{:.3f}>'.format(
+                    message = '<epoch:{:3d}, iter:{:8,d}, lr:{:.3e}>, loss:{:.3f}'.format(
                         epoch, num_index, self.optimizer.param_groups[0]['lr'], total_loss/num_index)
                     self.logger.info(message)
-                num_index += 1
         end_time = time.time()
         total_loss = total_loss/num_batchs
-        message = '<epoch:{:d}, iter:{:d}, lr:{:.3e}, loss:{:.3f}, Total time:{:.3f} min> '.format(
+        message = '<epoch:{:3d}, iter:{:8,d}, lr:{:.3e}, loss:{:.3f}, Total time:{:.3f} min> '.format(
             epoch, num_batchs, self.optimizer.param_groups[0]['lr'], total_loss, (end_time-start_time)/60)
         self.logger.info(message)
         return total_loss

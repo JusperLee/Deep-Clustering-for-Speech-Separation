@@ -15,7 +15,7 @@ class AudioData(object):
         is_mag: if True, abs(stft)
     '''
 
-    def __init__(self, scp_file, window='hann', nfft=256, window_length=256, hop_length=64, center=False, is_mag=False, is_log=True):
+    def __init__(self, scp_file, window='hann', nfft=256, window_length=256, hop_length=64, center=False, is_mag=True, is_log=True):
         self.wave = ut.read_scp(scp_file)
         self.wave_keys = [key for key in self.wave.keys()]
         self.STFT = STFT(window=window, nfft=nfft,

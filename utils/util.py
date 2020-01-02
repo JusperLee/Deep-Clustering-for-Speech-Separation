@@ -73,10 +73,12 @@ def compute_non_silent(samp, threshold=40, is_linear=True):
     '''
     if is_linear:
         samp = np.exp(samp)
-    samp_db = librosa.amplitude_to_db(samp,ref=1.0)
+    samp_db = librosa.amplitude_to_db(np.abs(samp),ref=1.0)
     max_mag = np.max(samp_db)
-    threshold = librosa.db_to_amplitude(max_mag-samp_db)
+    threshold = librosa.db_to_amplitude(max_mag-threshold)
+    #threshold = 10**((max_mag - threshold) / 20)
     non_silent = np.array(samp > threshold, dtype=np.float32)
+
     return non_silent
 
 def compute_cmvn(scp_file,save_file,**kwargs):
@@ -90,7 +92,7 @@ def compute_cmvn(scp_file,save_file,**kwargs):
             mean: [frequency-bins]
             var:  [frequency-bins]
     '''
-    wave_reader = AudioData.AudioData(scp_file,**kwargs)
+    wave_reader = AudioData(scp_file,**kwargs)
     frequency_bins = wave_reader[wave_reader.wave_keys[0]][0]
     all_wave = wave_reader[wave_reader.wave_keys[0]]
     index = 0
@@ -116,8 +118,10 @@ def apply_cmvn(samp,cmvn_dict):
     return (samp-cmvn_dict['means'])/cmvn_dict['stds']
 
 if __name__ == "__main__":
-    kwargs = {'window':'hann', 'nfft':256, 'window_length':256, 'hop_length':64, 'center':False, 'is_mag':True, 'is_log':True}
-    compute_cmvn("/home/likai/data1/create_scp/cv_mix.scp",'./cmvn.ark',**kwargs)
+    #kwargs = {'window':'hann', 'nfft':256, 'window_length':256, 'hop_length':64, 'center':False, 'is_mag':True, 'is_log':True}
+    #compute_cmvn("/home/likai/Desktop/create_scp/tr_mix.scp",'../cmvn.ark',**kwargs)
     #file = pickle.load(open('cmvn.ark','rb'))
     #print(file)
+    samp = read_wav('../1.wav')
+    print(compute_non_silent(samp))
     

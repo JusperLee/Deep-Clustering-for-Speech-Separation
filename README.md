@@ -34,5 +34,3 @@ python ./utils/util.py
 python train.py -opt ./option/train.yml
 ```
 
-## Thanks
-The framework of this code is from [PyTorch Template Project](https://github.com/victoresque/pytorch-template "PyTorch Template Project").

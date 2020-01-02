@@ -11,6 +11,7 @@ def setup_logger(logger_name, root, level=logging.INFO, screen=False, tofile=Fal
     formatter = logging.Formatter('%(asctime)s [%(pathname)s:%(lineno)s - %(levelname)s ] %(message)s',
                                   datefmt='%y-%m-%d %H:%M:%S')
     lg.setLevel(level)
+    os.makedirs(root,exist_ok=True)
     if tofile:
         log_file = os.path.join(root, '_{}.log'.format(get_timestamp()))
         fh = logging.FileHandler(log_file, mode='w')

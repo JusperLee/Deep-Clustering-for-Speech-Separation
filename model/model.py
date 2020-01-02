@@ -31,23 +31,19 @@ class DPCL(nn.Module):
         x, _ = self.blstm(x)
         if is_train:
             x,_ = pad_packed_sequence(x,batch_first=True)
-        print(x.shape)
         x = self.dropout(x)
 
         # B x T x hidden -> B x T x FD
         x = self.linear(x)
         x = self.activation(x)
-        print(x.shape)
 
         B = x.shape[0]
         if is_train:
             # B x TF x D
             x = x.view(B,-1,self.D)
-            print(x.shape)
         else:
             # B x TF x D -> TF x D
             x = torch.squeeze(x)
-            print(x.shape)
 
         return x
     
