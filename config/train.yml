@@ -1,5 +1,5 @@
 #### general settings
-name: DPCL
+name: DPCL_optim
 use_tb_logger: true
 num_spks: 2
 #### datasets
@@ -30,18 +30,18 @@ datasets:
 
 #### network structures
 DPCL:
-  num_layer: 2
-  nfft: 129
-  hidden_cells: 600
+  num_layer: 4
+  nfft: 129  # nfft/2+1
+  hidden_cells: 300
   emb_D: 40
-  dropout: 0.0
+  dropout: 0.5
   bidirectional: true
   activation: Tanh
 
 #### training settings: learning rate scheme, loss
 train:
   epoch: 100
-  early_stop: 5
+  early_stop: 10
   path: /home/likai/Desktop/DPCL/checkpoint
   is_gpu: true
 

@@ -133,13 +133,13 @@ class Trainer(object):
                 v_loss = self.validation(self.cur_epoch)
 
                 train_loss.append(t_loss)
-                val_loss.append(val_loss)
+                val_loss.append(v_loss)
 
                 if v_loss >= best_loss:
                     no_improve += 1
                     self.logger.info('No improvement, Best Loss: {:.4f}'.format(best_loss))
                 else:
-                    best_loss = val_loss
+                    best_loss = v_loss
                     no_improve = 0
                     self.save_checkpoint(self.cur_epoch,best=True)
                     self.logger.info('Epoch: {:d}, Now Best Loss Change: {:.4f}'.format(self.cur_epoch,best_loss))

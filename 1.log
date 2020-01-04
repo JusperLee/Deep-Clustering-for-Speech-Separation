@@ -1,0 +1,955 @@
+20-01-03 11:26:59 [train.py:58 - INFO ] Building the model of Deep Clustering
+20-01-03 11:26:59 [train.py:61 - INFO ] Building the optimizer of Deep Clustering
+20-01-03 11:26:59 [train.py:64 - INFO ] Building the dataloader of Deep Clustering
+20-01-03 11:26:59 [train.py:67 - INFO ] Building the Trainer of Deep Clustering
+20-01-03 11:26:59 [/home/likai/Desktop/DPCL/trainer/trainer.py:31 - INFO ] Load Nvida GPU .....
+20-01-03 11:27:05 [/home/likai/Desktop/DPCL/trainer/trainer.py:52 - INFO ] Gradient clipping by 200, default L2
+20-01-03 11:27:13 [/home/likai/Desktop/DPCL/trainer/trainer.py:92 - INFO ] Start Validation from epoch: 0, iter: 1
+20-01-03 11:27:53 [/home/likai/Desktop/DPCL/trainer/trainer.py:110 - INFO ] <epoch:0, iter:100, lr:1.000e-05, loss:17644.898>
+20-01-03 11:28:31 [/home/likai/Desktop/DPCL/trainer/trainer.py:110 - INFO ] <epoch:0, iter:200, lr:1.000e-05, loss:17764.933>
+20-01-03 11:29:10 [/home/likai/Desktop/DPCL/trainer/trainer.py:110 - INFO ] <epoch:0, iter:300, lr:1.000e-05, loss:17781.467>
+20-01-03 11:29:48 [/home/likai/Desktop/DPCL/trainer/trainer.py:110 - INFO ] <epoch:0, iter:400, lr:1.000e-05, loss:17752.696>
+20-01-03 11:30:26 [/home/likai/Desktop/DPCL/trainer/trainer.py:110 - INFO ] <epoch:0, iter:500, lr:1.000e-05, loss:17739.867>
+20-01-03 11:30:27 [/home/likai/Desktop/DPCL/trainer/trainer.py:116 - INFO ] <epoch:0, iter:500, lr:1.000e-05, loss:17739.867, Total time:3.230 min> 
+20-01-03 11:30:27 [/home/likai/Desktop/DPCL/trainer/trainer.py:127 - INFO ] Starting epoch from 0, loss = 17739.8667
+20-01-03 11:30:27 [/home/likai/Desktop/DPCL/trainer/trainer.py:58 - INFO ] Start training from epoch: 1, iter: 1
+20-01-03 11:31:54 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:1, iter:100, lr:1.000e-05, loss:21187.853>
+20-01-03 11:33:16 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:1, iter:200, lr:1.000e-05, loss:14790.482>
+20-01-03 11:34:39 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:1, iter:300, lr:1.000e-05, loss:12599.944>
+20-01-03 11:36:04 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:1, iter:400, lr:1.000e-05, loss:11492.832>
+20-01-03 11:37:26 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:1, iter:500, lr:1.000e-05, loss:10804.288>
+20-01-03 11:37:26 [/home/likai/Desktop/DPCL/trainer/trainer.py:88 - INFO ] <epoch:1, iter:500, lr:1.000e-05, loss:10804.288, Total time:6.993 min> 
+20-01-03 11:37:26 [/home/likai/Desktop/DPCL/trainer/trainer.py:92 - INFO ] Start Validation from epoch: 1, iter: 1
+20-01-03 11:38:06 [/home/likai/Desktop/DPCL/trainer/trainer.py:110 - INFO ] <epoch:1, iter:100, lr:1.000e-05, loss:7852.666>
+20-01-03 11:38:44 [/home/likai/Desktop/DPCL/trainer/trainer.py:110 - INFO ] <epoch:1, iter:200, lr:1.000e-05, loss:7868.245>
+20-01-03 11:39:23 [/home/likai/Desktop/DPCL/trainer/trainer.py:110 - INFO ] <epoch:1, iter:300, lr:1.000e-05, loss:7877.289>
+20-01-03 11:40:01 [/home/likai/Desktop/DPCL/trainer/trainer.py:110 - INFO ] <epoch:1, iter:400, lr:1.000e-05, loss:7893.746>
+20-01-03 11:40:39 [/home/likai/Desktop/DPCL/trainer/trainer.py:110 - INFO ] <epoch:1, iter:500, lr:1.000e-05, loss:7897.123>
+20-01-03 11:40:39 [/home/likai/Desktop/DPCL/trainer/trainer.py:116 - INFO ] <epoch:1, iter:500, lr:1.000e-05, loss:7897.123, Total time:3.222 min> 
+20-01-03 11:40:59 [/home/likai/Desktop/DPCL/trainer/trainer.py:145 - INFO ] Epoch: 1, Now Best Loss Change: 7897.1232
+20-01-03 11:40:59 [/home/likai/Desktop/DPCL/trainer/trainer.py:58 - INFO ] Start training from epoch: 2, iter: 1
+20-01-03 11:42:24 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:2, iter:100, lr:1.000e-05, loss:7809.185>
+20-01-03 11:43:47 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:2, iter:200, lr:1.000e-05, loss:7804.131>
+20-01-03 11:45:11 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:2, iter:300, lr:1.000e-05, loss:7734.752>
+20-01-03 11:46:34 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:2, iter:400, lr:1.000e-05, loss:7662.697>
+20-01-03 11:47:58 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:2, iter:500, lr:1.000e-05, loss:7633.942>
+20-01-03 11:47:58 [/home/likai/Desktop/DPCL/trainer/trainer.py:88 - INFO ] <epoch:2, iter:500, lr:1.000e-05, loss:7633.942, Total time:6.987 min> 
+20-01-03 11:47:58 [/home/likai/Desktop/DPCL/trainer/trainer.py:92 - INFO ] Start Validation from epoch: 2, iter: 1
+20-01-03 11:48:39 [/home/likai/Desktop/DPCL/trainer/trainer.py:110 - INFO ] <epoch:2, iter:100, lr:1.000e-05, loss:7511.199>
+20-01-03 11:49:18 [/home/likai/Desktop/DPCL/trainer/trainer.py:110 - INFO ] <epoch:2, iter:200, lr:1.000e-05, loss:7418.114>
+20-01-03 11:49:57 [/home/likai/Desktop/DPCL/trainer/trainer.py:110 - INFO ] <epoch:2, iter:300, lr:1.000e-05, loss:7410.699>
+20-01-03 11:50:35 [/home/likai/Desktop/DPCL/trainer/trainer.py:110 - INFO ] <epoch:2, iter:400, lr:1.000e-05, loss:7398.322>
+20-01-03 11:51:13 [/home/likai/Desktop/DPCL/trainer/trainer.py:110 - INFO ] <epoch:2, iter:500, lr:1.000e-05, loss:7400.952>
+20-01-03 11:51:13 [/home/likai/Desktop/DPCL/trainer/trainer.py:116 - INFO ] <epoch:2, iter:500, lr:1.000e-05, loss:7400.952, Total time:3.250 min> 
+20-01-03 11:51:32 [/home/likai/Desktop/DPCL/trainer/trainer.py:145 - INFO ] Epoch: 2, Now Best Loss Change: 7400.9524
+20-01-03 11:51:32 [/home/likai/Desktop/DPCL/trainer/trainer.py:58 - INFO ] Start training from epoch: 3, iter: 1
+20-01-03 11:52:58 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:3, iter:100, lr:1.000e-05, loss:7362.071>
+20-01-03 11:54:21 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:3, iter:200, lr:1.000e-05, loss:7342.988>
+20-01-03 11:55:43 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:3, iter:300, lr:1.000e-05, loss:7305.198>
+20-01-03 11:57:08 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:3, iter:400, lr:1.000e-05, loss:7311.125>
+20-01-03 11:58:30 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:3, iter:500, lr:1.000e-05, loss:7274.459>
+20-01-03 11:58:30 [/home/likai/Desktop/DPCL/trainer/trainer.py:88 - INFO ] <epoch:3, iter:500, lr:1.000e-05, loss:7274.459, Total time:6.963 min> 
+20-01-03 11:58:30 [/home/likai/Desktop/DPCL/trainer/trainer.py:92 - INFO ] Start Validation from epoch: 3, iter: 1
+20-01-03 11:59:11 [/home/likai/Desktop/DPCL/trainer/trainer.py:110 - INFO ] <epoch:3, iter:100, lr:1.000e-05, loss:7193.961>
+20-01-03 11:59:49 [/home/likai/Desktop/DPCL/trainer/trainer.py:110 - INFO ] <epoch:3, iter:200, lr:1.000e-05, loss:7162.170>
+20-01-03 12:00:26 [/home/likai/Desktop/DPCL/trainer/trainer.py:110 - INFO ] <epoch:3, iter:300, lr:1.000e-05, loss:7141.864>
+20-01-03 12:01:04 [/home/likai/Desktop/DPCL/trainer/trainer.py:110 - INFO ] <epoch:3, iter:400, lr:1.000e-05, loss:7150.690>
+20-01-03 12:01:43 [/home/likai/Desktop/DPCL/trainer/trainer.py:110 - INFO ] <epoch:3, iter:500, lr:1.000e-05, loss:7166.847>
+20-01-03 12:01:43 [/home/likai/Desktop/DPCL/trainer/trainer.py:116 - INFO ] <epoch:3, iter:500, lr:1.000e-05, loss:7166.847, Total time:3.211 min> 
+20-01-03 12:02:02 [/home/likai/Desktop/DPCL/trainer/trainer.py:145 - INFO ] Epoch: 3, Now Best Loss Change: 7166.8467
+20-01-03 12:02:02 [/home/likai/Desktop/DPCL/trainer/trainer.py:58 - INFO ] Start training from epoch: 4, iter: 1
+20-01-03 12:03:29 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:4, iter:100, lr:1.000e-05, loss:7178.021>
+20-01-03 12:04:53 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:4, iter:200, lr:1.000e-05, loss:7123.243>
+20-01-03 12:06:15 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:4, iter:300, lr:1.000e-05, loss:7058.059>
+20-01-03 12:07:38 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:4, iter:400, lr:1.000e-05, loss:7042.898>
+20-01-03 12:09:01 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:4, iter:500, lr:1.000e-05, loss:7019.011>
+20-01-03 12:09:02 [/home/likai/Desktop/DPCL/trainer/trainer.py:88 - INFO ] <epoch:4, iter:500, lr:1.000e-05, loss:7019.011, Total time:6.989 min> 
+20-01-03 12:09:02 [/home/likai/Desktop/DPCL/trainer/trainer.py:92 - INFO ] Start Validation from epoch: 4, iter: 1
+20-01-03 12:09:42 [/home/likai/Desktop/DPCL/trainer/trainer.py:110 - INFO ] <epoch:4, iter:100, lr:1.000e-05, loss:6884.495>
+20-01-03 12:10:21 [/home/likai/Desktop/DPCL/trainer/trainer.py:110 - INFO ] <epoch:4, iter:200, lr:1.000e-05, loss:6906.990>
+20-01-03 12:11:00 [/home/likai/Desktop/DPCL/trainer/trainer.py:110 - INFO ] <epoch:4, iter:300, lr:1.000e-05, loss:6929.225>
+20-01-03 12:11:38 [/home/likai/Desktop/DPCL/trainer/trainer.py:110 - INFO ] <epoch:4, iter:400, lr:1.000e-05, loss:6916.429>
+20-01-03 12:12:16 [/home/likai/Desktop/DPCL/trainer/trainer.py:110 - INFO ] <epoch:4, iter:500, lr:1.000e-05, loss:6898.393>
+20-01-03 12:12:16 [/home/likai/Desktop/DPCL/trainer/trainer.py:116 - INFO ] <epoch:4, iter:500, lr:1.000e-05, loss:6898.393, Total time:3.247 min> 
+20-01-03 12:12:36 [/home/likai/Desktop/DPCL/trainer/trainer.py:145 - INFO ] Epoch: 4, Now Best Loss Change: 6898.3930
+20-01-03 12:12:36 [/home/likai/Desktop/DPCL/trainer/trainer.py:58 - INFO ] Start training from epoch: 5, iter: 1
+20-01-03 12:14:01 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:5, iter:100, lr:1.000e-05, loss:6878.476>
+20-01-03 12:15:25 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:5, iter:200, lr:1.000e-05, loss:6855.541>
+20-01-03 12:16:48 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:5, iter:300, lr:1.000e-05, loss:6804.151>
+20-01-03 12:18:10 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:5, iter:400, lr:1.000e-05, loss:6793.129>
+20-01-03 12:19:35 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:5, iter:500, lr:1.000e-05, loss:6802.511>
+20-01-03 12:19:36 [/home/likai/Desktop/DPCL/trainer/trainer.py:88 - INFO ] <epoch:5, iter:500, lr:1.000e-05, loss:6802.511, Total time:6.998 min> 
+20-01-03 12:19:36 [/home/likai/Desktop/DPCL/trainer/trainer.py:92 - INFO ] Start Validation from epoch: 5, iter: 1
+20-01-03 12:20:16 [/home/likai/Desktop/DPCL/trainer/trainer.py:110 - INFO ] <epoch:5, iter:100, lr:1.000e-05, loss:6706.396>
+20-01-03 12:20:55 [/home/likai/Desktop/DPCL/trainer/trainer.py:110 - INFO ] <epoch:5, iter:200, lr:1.000e-05, loss:6696.058>
+20-01-03 12:21:33 [/home/likai/Desktop/DPCL/trainer/trainer.py:110 - INFO ] <epoch:5, iter:300, lr:1.000e-05, loss:6722.718>
+20-01-03 12:22:12 [/home/likai/Desktop/DPCL/trainer/trainer.py:110 - INFO ] <epoch:5, iter:400, lr:1.000e-05, loss:6728.990>
+20-01-03 12:22:50 [/home/likai/Desktop/DPCL/trainer/trainer.py:110 - INFO ] <epoch:5, iter:500, lr:1.000e-05, loss:6724.821>
+20-01-03 12:22:50 [/home/likai/Desktop/DPCL/trainer/trainer.py:116 - INFO ] <epoch:5, iter:500, lr:1.000e-05, loss:6724.821, Total time:3.243 min> 
+20-01-03 12:23:11 [/home/likai/Desktop/DPCL/trainer/trainer.py:145 - INFO ] Epoch: 5, Now Best Loss Change: 6724.8205
+20-01-03 12:23:11 [/home/likai/Desktop/DPCL/trainer/trainer.py:58 - INFO ] Start training from epoch: 6, iter: 1
+20-01-03 12:24:37 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:6, iter:100, lr:1.000e-05, loss:6754.292>
+20-01-03 12:26:00 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:6, iter:200, lr:1.000e-05, loss:6702.367>
+20-01-03 12:27:24 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:6, iter:300, lr:1.000e-05, loss:6678.193>
+20-01-03 12:28:48 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:6, iter:400, lr:1.000e-05, loss:6658.008>
+20-01-03 12:30:10 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:6, iter:500, lr:1.000e-05, loss:6627.822>
+20-01-03 12:30:11 [/home/likai/Desktop/DPCL/trainer/trainer.py:88 - INFO ] <epoch:6, iter:500, lr:1.000e-05, loss:6627.822, Total time:6.995 min> 
+20-01-03 12:30:11 [/home/likai/Desktop/DPCL/trainer/trainer.py:92 - INFO ] Start Validation from epoch: 6, iter: 1
+20-01-03 12:30:51 [/home/likai/Desktop/DPCL/trainer/trainer.py:110 - INFO ] <epoch:6, iter:100, lr:1.000e-05, loss:6543.827>
+20-01-03 12:31:29 [/home/likai/Desktop/DPCL/trainer/trainer.py:110 - INFO ] <epoch:6, iter:200, lr:1.000e-05, loss:6492.985>
+20-01-03 12:32:08 [/home/likai/Desktop/DPCL/trainer/trainer.py:110 - INFO ] <epoch:6, iter:300, lr:1.000e-05, loss:6505.717>
+20-01-03 12:32:48 [/home/likai/Desktop/DPCL/trainer/trainer.py:110 - INFO ] <epoch:6, iter:400, lr:1.000e-05, loss:6512.454>
+20-01-03 12:33:26 [/home/likai/Desktop/DPCL/trainer/trainer.py:110 - INFO ] <epoch:6, iter:500, lr:1.000e-05, loss:6518.360>
+20-01-03 12:33:26 [/home/likai/Desktop/DPCL/trainer/trainer.py:116 - INFO ] <epoch:6, iter:500, lr:1.000e-05, loss:6518.360, Total time:3.264 min> 
+20-01-03 12:33:48 [/home/likai/Desktop/DPCL/trainer/trainer.py:145 - INFO ] Epoch: 6, Now Best Loss Change: 6518.3600
+20-01-03 12:33:48 [/home/likai/Desktop/DPCL/trainer/trainer.py:58 - INFO ] Start training from epoch: 7, iter: 1
+20-01-03 12:35:13 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:7, iter:100, lr:1.000e-05, loss:6602.939>
+20-01-03 12:36:37 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:7, iter:200, lr:1.000e-05, loss:6573.415>
+20-01-03 12:38:01 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:7, iter:300, lr:1.000e-05, loss:6533.699>
+20-01-03 12:39:24 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:7, iter:400, lr:1.000e-05, loss:6481.353>
+20-01-03 12:40:47 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:7, iter:500, lr:1.000e-05, loss:6457.200>
+20-01-03 12:40:47 [/home/likai/Desktop/DPCL/trainer/trainer.py:88 - INFO ] <epoch:7, iter:500, lr:1.000e-05, loss:6457.200, Total time:6.985 min> 
+20-01-03 12:40:47 [/home/likai/Desktop/DPCL/trainer/trainer.py:92 - INFO ] Start Validation from epoch: 7, iter: 1
+20-01-03 12:41:27 [/home/likai/Desktop/DPCL/trainer/trainer.py:110 - INFO ] <epoch:7, iter:100, lr:1.000e-05, loss:6319.681>
+20-01-03 12:42:06 [/home/likai/Desktop/DPCL/trainer/trainer.py:110 - INFO ] <epoch:7, iter:200, lr:1.000e-05, loss:6330.758>
+20-01-03 12:42:45 [/home/likai/Desktop/DPCL/trainer/trainer.py:110 - INFO ] <epoch:7, iter:300, lr:1.000e-05, loss:6333.034>
+20-01-03 12:43:23 [/home/likai/Desktop/DPCL/trainer/trainer.py:110 - INFO ] <epoch:7, iter:400, lr:1.000e-05, loss:6332.723>
+20-01-03 12:44:00 [/home/likai/Desktop/DPCL/trainer/trainer.py:110 - INFO ] <epoch:7, iter:500, lr:1.000e-05, loss:6330.198>
+20-01-03 12:44:00 [/home/likai/Desktop/DPCL/trainer/trainer.py:116 - INFO ] <epoch:7, iter:500, lr:1.000e-05, loss:6330.198, Total time:3.225 min> 
+20-01-03 12:44:20 [/home/likai/Desktop/DPCL/trainer/trainer.py:145 - INFO ] Epoch: 7, Now Best Loss Change: 6330.1984
+20-01-03 12:44:20 [/home/likai/Desktop/DPCL/trainer/trainer.py:58 - INFO ] Start training from epoch: 8, iter: 1
+20-01-03 12:45:46 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:8, iter:100, lr:1.000e-05, loss:6320.569>
+20-01-03 12:47:08 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:8, iter:200, lr:1.000e-05, loss:6285.607>
+20-01-03 12:48:31 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:8, iter:300, lr:1.000e-05, loss:6299.873>
+20-01-03 12:49:55 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:8, iter:400, lr:1.000e-05, loss:6304.548>
+20-01-03 12:51:19 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:8, iter:500, lr:1.000e-05, loss:6310.897>
+20-01-03 12:51:19 [/home/likai/Desktop/DPCL/trainer/trainer.py:88 - INFO ] <epoch:8, iter:500, lr:1.000e-05, loss:6310.897, Total time:6.978 min> 
+20-01-03 12:51:19 [/home/likai/Desktop/DPCL/trainer/trainer.py:92 - INFO ] Start Validation from epoch: 8, iter: 1
+20-01-03 12:51:59 [/home/likai/Desktop/DPCL/trainer/trainer.py:110 - INFO ] <epoch:8, iter:100, lr:1.000e-05, loss:6228.166>
+20-01-03 12:52:37 [/home/likai/Desktop/DPCL/trainer/trainer.py:110 - INFO ] <epoch:8, iter:200, lr:1.000e-05, loss:6239.684>
+20-01-03 12:53:15 [/home/likai/Desktop/DPCL/trainer/trainer.py:110 - INFO ] <epoch:8, iter:300, lr:1.000e-05, loss:6235.787>
+20-01-03 12:53:55 [/home/likai/Desktop/DPCL/trainer/trainer.py:110 - INFO ] <epoch:8, iter:400, lr:1.000e-05, loss:6260.308>
+20-01-03 12:54:33 [/home/likai/Desktop/DPCL/trainer/trainer.py:110 - INFO ] <epoch:8, iter:500, lr:1.000e-05, loss:6268.862>
+20-01-03 12:54:33 [/home/likai/Desktop/DPCL/trainer/trainer.py:116 - INFO ] <epoch:8, iter:500, lr:1.000e-05, loss:6268.862, Total time:3.243 min> 
+20-01-03 12:54:53 [/home/likai/Desktop/DPCL/trainer/trainer.py:145 - INFO ] Epoch: 8, Now Best Loss Change: 6268.8622
+20-01-03 12:54:53 [/home/likai/Desktop/DPCL/trainer/trainer.py:58 - INFO ] Start training from epoch: 9, iter: 1
+20-01-03 12:56:19 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:9, iter:100, lr:1.000e-05, loss:6240.811>
+20-01-03 12:57:43 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:9, iter:200, lr:1.000e-05, loss:6169.722>
+20-01-03 12:59:07 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:9, iter:300, lr:1.000e-05, loss:6159.600>
+20-01-03 13:00:31 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:9, iter:400, lr:1.000e-05, loss:6164.593>
+20-01-03 13:01:54 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:9, iter:500, lr:1.000e-05, loss:6166.284>
+20-01-03 13:01:54 [/home/likai/Desktop/DPCL/trainer/trainer.py:88 - INFO ] <epoch:9, iter:500, lr:1.000e-05, loss:6166.284, Total time:7.023 min> 
+20-01-03 13:01:54 [/home/likai/Desktop/DPCL/trainer/trainer.py:92 - INFO ] Start Validation from epoch: 9, iter: 1
+20-01-03 13:02:34 [/home/likai/Desktop/DPCL/trainer/trainer.py:110 - INFO ] <epoch:9, iter:100, lr:1.000e-05, loss:5984.711>
+20-01-03 13:03:12 [/home/likai/Desktop/DPCL/trainer/trainer.py:110 - INFO ] <epoch:9, iter:200, lr:1.000e-05, loss:6045.089>
+20-01-03 13:03:50 [/home/likai/Desktop/DPCL/trainer/trainer.py:110 - INFO ] <epoch:9, iter:300, lr:1.000e-05, loss:6061.405>
+20-01-03 13:04:28 [/home/likai/Desktop/DPCL/trainer/trainer.py:110 - INFO ] <epoch:9, iter:400, lr:1.000e-05, loss:6072.588>
+20-01-03 13:05:07 [/home/likai/Desktop/DPCL/trainer/trainer.py:110 - INFO ] <epoch:9, iter:500, lr:1.000e-05, loss:6082.685>
+20-01-03 13:05:07 [/home/likai/Desktop/DPCL/trainer/trainer.py:116 - INFO ] <epoch:9, iter:500, lr:1.000e-05, loss:6082.685, Total time:3.220 min> 
+20-01-03 13:05:32 [/home/likai/Desktop/DPCL/trainer/trainer.py:145 - INFO ] Epoch: 9, Now Best Loss Change: 6082.6846
+20-01-03 13:05:32 [/home/likai/Desktop/DPCL/trainer/trainer.py:58 - INFO ] Start training from epoch: 10, iter: 1
+20-01-03 13:06:59 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:10, iter:100, lr:1.000e-05, loss:6065.978>
+20-01-03 13:08:23 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:10, iter:200, lr:1.000e-05, loss:6067.205>
+20-01-03 13:09:45 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:10, iter:300, lr:1.000e-05, loss:6062.218>
+20-01-03 13:11:09 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:10, iter:400, lr:1.000e-05, loss:6048.046>
+20-01-03 13:12:32 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:10, iter:500, lr:1.000e-05, loss:6045.513>
+20-01-03 13:12:32 [/home/likai/Desktop/DPCL/trainer/trainer.py:88 - INFO ] <epoch:10, iter:500, lr:1.000e-05, loss:6045.513, Total time:7.009 min> 
+20-01-03 13:12:32 [/home/likai/Desktop/DPCL/trainer/trainer.py:92 - INFO ] Start Validation from epoch: 10, iter: 1
+20-01-03 13:13:12 [/home/likai/Desktop/DPCL/trainer/trainer.py:110 - INFO ] <epoch:10, iter:100, lr:1.000e-05, loss:5983.467>
+20-01-03 13:13:50 [/home/likai/Desktop/DPCL/trainer/trainer.py:110 - INFO ] <epoch:10, iter:200, lr:1.000e-05, loss:5937.217>
+20-01-03 13:14:29 [/home/likai/Desktop/DPCL/trainer/trainer.py:110 - INFO ] <epoch:10, iter:300, lr:1.000e-05, loss:5923.831>
+20-01-03 13:15:06 [/home/likai/Desktop/DPCL/trainer/trainer.py:110 - INFO ] <epoch:10, iter:400, lr:1.000e-05, loss:5925.068>
+20-01-03 13:20:52 [train.py:58 - INFO ] Building the model of Deep Clustering
+20-01-03 13:20:52 [train.py:61 - INFO ] Building the optimizer of Deep Clustering
+20-01-03 13:20:52 [train.py:64 - INFO ] Building the dataloader of Deep Clustering
+20-01-03 13:20:52 [train.py:67 - INFO ] Building the Trainer of Deep Clustering
+20-01-03 13:20:52 [/home/likai/Desktop/DPCL/trainer/trainer.py:31 - INFO ] Load Nvida GPU .....
+20-01-03 13:20:57 [/home/likai/Desktop/DPCL/trainer/trainer.py:52 - INFO ] Gradient clipping by 200, default L2
+20-01-03 13:21:04 [/home/likai/Desktop/DPCL/trainer/trainer.py:92 - INFO ] Start Validation from epoch: 0, iter: 1
+500 125
+20-01-03 13:21:44 [/home/likai/Desktop/DPCL/trainer/trainer.py:110 - INFO ] <epoch:0, iter:100, lr:1.000e-05, loss:17893.272>
+20-01-03 13:21:53 [/home/likai/Desktop/DPCL/trainer/trainer.py:116 - INFO ] <epoch:0, iter:125, lr:1.000e-05, loss:17804.596, Total time:0.827 min> 
+20-01-03 13:21:53 [/home/likai/Desktop/DPCL/trainer/trainer.py:127 - INFO ] Starting epoch from 0, loss = 17804.5957
+20-01-03 13:21:53 [/home/likai/Desktop/DPCL/trainer/trainer.py:58 - INFO ] Start training from epoch: 1, iter: 1
+20-01-03 13:23:19 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:1, iter:100, lr:1.000e-05, loss:25092.140>
+20-01-03 13:24:43 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:1, iter:200, lr:1.000e-05, loss:16687.772>
+20-01-03 13:26:06 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:1, iter:300, lr:1.000e-05, loss:13897.405>
+20-01-03 13:27:29 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:1, iter:400, lr:1.000e-05, loss:12436.231>
+20-01-03 13:28:52 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:1, iter:500, lr:1.000e-05, loss:11528.350>
+20-01-03 13:28:52 [/home/likai/Desktop/DPCL/trainer/trainer.py:88 - INFO ] <epoch:1, iter:500, lr:1.000e-05, loss:11528.350, Total time:6.979 min> 
+20-01-03 13:28:52 [/home/likai/Desktop/DPCL/trainer/trainer.py:92 - INFO ] Start Validation from epoch: 1, iter: 1
+20-01-03 13:29:32 [/home/likai/Desktop/DPCL/trainer/trainer.py:110 - INFO ] <epoch:1, iter:100, lr:1.000e-05, loss:7946.285>
+20-01-03 13:29:42 [/home/likai/Desktop/DPCL/trainer/trainer.py:116 - INFO ] <epoch:1, iter:125, lr:1.000e-05, loss:7942.881, Total time:0.830 min> 
+20-01-03 13:30:09 [/home/likai/Desktop/DPCL/trainer/trainer.py:145 - INFO ] Epoch: 1, Now Best Loss Change: 7942.8806
+20-01-03 13:30:09 [/home/likai/Desktop/DPCL/trainer/trainer.py:58 - INFO ] Start training from epoch: 2, iter: 1
+20-01-03 13:31:35 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:2, iter:100, lr:1.000e-05, loss:7849.676>
+20-01-03 13:32:57 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:2, iter:200, lr:1.000e-05, loss:7754.936>
+20-01-03 13:34:21 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:2, iter:300, lr:1.000e-05, loss:7718.063>
+20-01-03 13:35:43 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:2, iter:400, lr:1.000e-05, loss:7670.777>
+20-01-03 13:37:06 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:2, iter:500, lr:1.000e-05, loss:7602.655>
+20-01-03 13:37:07 [/home/likai/Desktop/DPCL/trainer/trainer.py:88 - INFO ] <epoch:2, iter:500, lr:1.000e-05, loss:7602.655, Total time:6.963 min> 
+20-01-03 13:37:07 [/home/likai/Desktop/DPCL/trainer/trainer.py:92 - INFO ] Start Validation from epoch: 2, iter: 1
+20-01-03 13:37:47 [/home/likai/Desktop/DPCL/trainer/trainer.py:110 - INFO ] <epoch:2, iter:100, lr:1.000e-05, loss:7450.357>
+20-01-03 13:37:57 [/home/likai/Desktop/DPCL/trainer/trainer.py:116 - INFO ] <epoch:2, iter:125, lr:1.000e-05, loss:7429.013, Total time:0.832 min> 
+20-01-03 13:38:16 [/home/likai/Desktop/DPCL/trainer/trainer.py:145 - INFO ] Epoch: 2, Now Best Loss Change: 7429.0132
+20-01-03 13:38:16 [/home/likai/Desktop/DPCL/trainer/trainer.py:58 - INFO ] Start training from epoch: 3, iter: 1
+20-01-03 13:39:43 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:3, iter:100, lr:1.000e-05, loss:7451.553>
+20-01-03 13:41:04 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:3, iter:200, lr:1.000e-05, loss:7367.021>
+20-01-03 13:42:27 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:3, iter:300, lr:1.000e-05, loss:7319.279>
+20-01-03 13:43:53 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:3, iter:400, lr:1.000e-05, loss:7299.506>
+20-01-03 13:45:15 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:3, iter:500, lr:1.000e-05, loss:7248.915>
+20-01-03 13:45:15 [/home/likai/Desktop/DPCL/trainer/trainer.py:88 - INFO ] <epoch:3, iter:500, lr:1.000e-05, loss:7248.915, Total time:6.984 min> 
+20-01-03 13:45:15 [/home/likai/Desktop/DPCL/trainer/trainer.py:92 - INFO ] Start Validation from epoch: 3, iter: 1
+20-01-03 13:45:54 [/home/likai/Desktop/DPCL/trainer/trainer.py:110 - INFO ] <epoch:3, iter:100, lr:1.000e-05, loss:7180.546>
+20-01-03 13:46:03 [/home/likai/Desktop/DPCL/trainer/trainer.py:116 - INFO ] <epoch:3, iter:125, lr:1.000e-05, loss:7164.612, Total time:0.811 min> 
+20-01-03 13:46:24 [/home/likai/Desktop/DPCL/trainer/trainer.py:145 - INFO ] Epoch: 3, Now Best Loss Change: 7164.6123
+20-01-03 13:46:24 [/home/likai/Desktop/DPCL/trainer/trainer.py:58 - INFO ] Start training from epoch: 4, iter: 1
+20-01-03 13:47:50 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:4, iter:100, lr:1.000e-05, loss:7143.496>
+20-01-03 13:49:12 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:4, iter:200, lr:1.000e-05, loss:7073.872>
+20-01-03 13:50:35 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:4, iter:300, lr:1.000e-05, loss:7038.652>
+20-01-03 13:51:58 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:4, iter:400, lr:1.000e-05, loss:7022.759>
+20-01-03 13:53:22 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:4, iter:500, lr:1.000e-05, loss:7000.711>
+20-01-03 13:53:22 [/home/likai/Desktop/DPCL/trainer/trainer.py:88 - INFO ] <epoch:4, iter:500, lr:1.000e-05, loss:7000.711, Total time:6.962 min> 
+20-01-03 13:53:22 [/home/likai/Desktop/DPCL/trainer/trainer.py:92 - INFO ] Start Validation from epoch: 4, iter: 1
+20-01-03 13:54:02 [/home/likai/Desktop/DPCL/trainer/trainer.py:110 - INFO ] <epoch:4, iter:100, lr:1.000e-05, loss:6937.438>
+20-01-03 13:54:11 [/home/likai/Desktop/DPCL/trainer/trainer.py:116 - INFO ] <epoch:4, iter:125, lr:1.000e-05, loss:6904.724, Total time:0.822 min> 
+20-01-03 13:54:30 [/home/likai/Desktop/DPCL/trainer/trainer.py:145 - INFO ] Epoch: 4, Now Best Loss Change: 6904.7237
+20-01-03 13:54:30 [/home/likai/Desktop/DPCL/trainer/trainer.py:58 - INFO ] Start training from epoch: 5, iter: 1
+20-01-03 13:55:57 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:5, iter:100, lr:1.000e-05, loss:6791.427>
+20-01-03 13:57:21 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:5, iter:200, lr:1.000e-05, loss:6806.995>
+20-01-03 13:58:44 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:5, iter:300, lr:1.000e-05, loss:6790.700>
+20-01-03 14:00:08 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:5, iter:400, lr:1.000e-05, loss:6809.504>
+20-01-03 14:01:30 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:5, iter:500, lr:1.000e-05, loss:6787.339>
+20-01-03 14:01:30 [/home/likai/Desktop/DPCL/trainer/trainer.py:88 - INFO ] <epoch:5, iter:500, lr:1.000e-05, loss:6787.339, Total time:6.998 min> 
+20-01-03 14:01:30 [/home/likai/Desktop/DPCL/trainer/trainer.py:92 - INFO ] Start Validation from epoch: 5, iter: 1
+20-01-03 14:02:10 [/home/likai/Desktop/DPCL/trainer/trainer.py:110 - INFO ] <epoch:5, iter:100, lr:1.000e-05, loss:6726.079>
+20-01-03 14:02:20 [/home/likai/Desktop/DPCL/trainer/trainer.py:116 - INFO ] <epoch:5, iter:125, lr:1.000e-05, loss:6741.664, Total time:0.823 min> 
+20-01-03 14:02:44 [/home/likai/Desktop/DPCL/trainer/trainer.py:145 - INFO ] Epoch: 5, Now Best Loss Change: 6741.6644
+20-01-03 14:02:44 [/home/likai/Desktop/DPCL/trainer/trainer.py:58 - INFO ] Start training from epoch: 6, iter: 1
+20-01-03 14:04:10 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:6, iter:100, lr:1.000e-05, loss:6662.449>
+20-01-03 14:05:32 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:6, iter:200, lr:1.000e-05, loss:6631.493>
+20-01-03 14:06:57 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:6, iter:300, lr:1.000e-05, loss:6642.712>
+20-01-03 14:08:19 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:6, iter:400, lr:1.000e-05, loss:6630.920>
+20-01-03 14:09:43 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:6, iter:500, lr:1.000e-05, loss:6613.549>
+20-01-03 14:09:43 [/home/likai/Desktop/DPCL/trainer/trainer.py:88 - INFO ] <epoch:6, iter:500, lr:1.000e-05, loss:6613.549, Total time:6.980 min> 
+20-01-03 14:09:43 [/home/likai/Desktop/DPCL/trainer/trainer.py:92 - INFO ] Start Validation from epoch: 6, iter: 1
+20-01-03 14:10:22 [/home/likai/Desktop/DPCL/trainer/trainer.py:110 - INFO ] <epoch:6, iter:100, lr:1.000e-05, loss:6573.921>
+20-01-03 14:10:32 [/home/likai/Desktop/DPCL/trainer/trainer.py:116 - INFO ] <epoch:6, iter:125, lr:1.000e-05, loss:6594.976, Total time:0.816 min> 
+20-01-03 14:10:55 [/home/likai/Desktop/DPCL/trainer/trainer.py:145 - INFO ] Epoch: 6, Now Best Loss Change: 6594.9764
+20-01-03 14:10:55 [/home/likai/Desktop/DPCL/trainer/trainer.py:58 - INFO ] Start training from epoch: 7, iter: 1
+20-01-03 14:12:20 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:7, iter:100, lr:1.000e-05, loss:6440.132>
+20-01-03 14:13:44 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:7, iter:200, lr:1.000e-05, loss:6446.077>
+20-01-03 14:15:07 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:7, iter:300, lr:1.000e-05, loss:6440.200>
+20-01-03 14:16:30 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:7, iter:400, lr:1.000e-05, loss:6458.659>
+20-01-03 14:17:53 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:7, iter:500, lr:1.000e-05, loss:6447.743>
+20-01-03 14:17:53 [/home/likai/Desktop/DPCL/trainer/trainer.py:88 - INFO ] <epoch:7, iter:500, lr:1.000e-05, loss:6447.743, Total time:6.968 min> 
+20-01-03 14:17:53 [/home/likai/Desktop/DPCL/trainer/trainer.py:92 - INFO ] Start Validation from epoch: 7, iter: 1
+20-01-03 14:18:33 [/home/likai/Desktop/DPCL/trainer/trainer.py:110 - INFO ] <epoch:7, iter:100, lr:1.000e-05, loss:6456.950>
+20-01-03 14:18:43 [/home/likai/Desktop/DPCL/trainer/trainer.py:116 - INFO ] <epoch:7, iter:125, lr:1.000e-05, loss:6470.187, Total time:0.830 min> 
+20-01-03 14:19:03 [/home/likai/Desktop/DPCL/trainer/trainer.py:145 - INFO ] Epoch: 7, Now Best Loss Change: 6470.1869
+20-01-03 14:19:03 [/home/likai/Desktop/DPCL/trainer/trainer.py:58 - INFO ] Start training from epoch: 8, iter: 1
+20-01-03 14:20:29 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:8, iter:100, lr:1.000e-05, loss:6315.311>
+20-01-03 14:21:51 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:8, iter:200, lr:1.000e-05, loss:6328.515>
+20-01-03 14:23:14 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:8, iter:300, lr:1.000e-05, loss:6294.646>
+20-01-03 14:24:38 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:8, iter:400, lr:1.000e-05, loss:6313.942>
+20-01-03 14:26:01 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:8, iter:500, lr:1.000e-05, loss:6299.878>
+20-01-03 14:26:02 [/home/likai/Desktop/DPCL/trainer/trainer.py:88 - INFO ] <epoch:8, iter:500, lr:1.000e-05, loss:6299.878, Total time:6.973 min> 
+20-01-03 14:26:02 [/home/likai/Desktop/DPCL/trainer/trainer.py:92 - INFO ] Start Validation from epoch: 8, iter: 1
+20-01-03 14:26:41 [/home/likai/Desktop/DPCL/trainer/trainer.py:110 - INFO ] <epoch:8, iter:100, lr:1.000e-05, loss:6308.900>
+20-01-03 14:26:51 [/home/likai/Desktop/DPCL/trainer/trainer.py:116 - INFO ] <epoch:8, iter:125, lr:1.000e-05, loss:6316.313, Total time:0.822 min> 
+20-01-03 14:27:10 [/home/likai/Desktop/DPCL/trainer/trainer.py:145 - INFO ] Epoch: 8, Now Best Loss Change: 6316.3132
+20-01-03 14:27:10 [/home/likai/Desktop/DPCL/trainer/trainer.py:58 - INFO ] Start training from epoch: 9, iter: 1
+20-01-03 14:28:36 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:9, iter:100, lr:1.000e-05, loss:6207.088>
+20-01-03 14:30:01 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:9, iter:200, lr:1.000e-05, loss:6209.011>
+20-01-03 14:31:23 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:9, iter:300, lr:1.000e-05, loss:6181.967>
+20-01-03 14:32:47 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:9, iter:400, lr:1.000e-05, loss:6173.535>
+20-01-03 14:34:08 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:9, iter:500, lr:1.000e-05, loss:6161.573>
+20-01-03 14:34:08 [/home/likai/Desktop/DPCL/trainer/trainer.py:88 - INFO ] <epoch:9, iter:500, lr:1.000e-05, loss:6161.573, Total time:6.971 min> 
+20-01-03 14:34:08 [/home/likai/Desktop/DPCL/trainer/trainer.py:92 - INFO ] Start Validation from epoch: 9, iter: 1
+20-01-03 14:34:48 [/home/likai/Desktop/DPCL/trainer/trainer.py:110 - INFO ] <epoch:9, iter:100, lr:1.000e-05, loss:6177.758>
+20-01-03 14:34:58 [/home/likai/Desktop/DPCL/trainer/trainer.py:116 - INFO ] <epoch:9, iter:125, lr:1.000e-05, loss:6195.970, Total time:0.819 min> 
+20-01-03 14:35:22 [/home/likai/Desktop/DPCL/trainer/trainer.py:145 - INFO ] Epoch: 9, Now Best Loss Change: 6195.9697
+20-01-03 14:35:22 [/home/likai/Desktop/DPCL/trainer/trainer.py:58 - INFO ] Start training from epoch: 10, iter: 1
+20-01-03 14:36:47 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:10, iter:100, lr:1.000e-05, loss:6045.673>
+20-01-03 14:38:09 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:10, iter:200, lr:1.000e-05, loss:6025.454>
+20-01-03 14:39:32 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:10, iter:300, lr:1.000e-05, loss:6046.618>
+20-01-03 14:40:55 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:10, iter:400, lr:1.000e-05, loss:6037.450>
+20-01-03 14:42:19 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:10, iter:500, lr:1.000e-05, loss:6043.818>
+20-01-03 14:42:19 [/home/likai/Desktop/DPCL/trainer/trainer.py:88 - INFO ] <epoch:10, iter:500, lr:1.000e-05, loss:6043.818, Total time:6.951 min> 
+20-01-03 14:42:19 [/home/likai/Desktop/DPCL/trainer/trainer.py:92 - INFO ] Start Validation from epoch: 10, iter: 1
+20-01-03 14:43:00 [/home/likai/Desktop/DPCL/trainer/trainer.py:110 - INFO ] <epoch:10, iter:100, lr:1.000e-05, loss:6147.188>
+20-01-03 14:43:09 [/home/likai/Desktop/DPCL/trainer/trainer.py:116 - INFO ] <epoch:10, iter:125, lr:1.000e-05, loss:6117.594, Total time:0.833 min> 
+20-01-03 14:43:28 [/home/likai/Desktop/DPCL/trainer/trainer.py:145 - INFO ] Epoch: 10, Now Best Loss Change: 6117.5940
+20-01-03 14:43:28 [/home/likai/Desktop/DPCL/trainer/trainer.py:58 - INFO ] Start training from epoch: 11, iter: 1
+20-01-03 14:44:54 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:11, iter:100, lr:1.000e-05, loss:5958.292>
+20-01-03 14:46:16 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:11, iter:200, lr:1.000e-05, loss:5973.779>
+20-01-03 14:47:39 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:11, iter:300, lr:1.000e-05, loss:5965.338>
+20-01-03 14:49:02 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:11, iter:400, lr:1.000e-05, loss:5956.458>
+20-01-03 14:50:23 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:11, iter:500, lr:1.000e-05, loss:5929.245>
+20-01-03 14:50:23 [/home/likai/Desktop/DPCL/trainer/trainer.py:88 - INFO ] <epoch:11, iter:500, lr:1.000e-05, loss:5929.245, Total time:6.921 min> 
+20-01-03 14:50:23 [/home/likai/Desktop/DPCL/trainer/trainer.py:92 - INFO ] Start Validation from epoch: 11, iter: 1
+20-01-03 14:51:04 [/home/likai/Desktop/DPCL/trainer/trainer.py:110 - INFO ] <epoch:11, iter:100, lr:1.000e-05, loss:6079.103>
+20-01-03 14:51:13 [/home/likai/Desktop/DPCL/trainer/trainer.py:116 - INFO ] <epoch:11, iter:125, lr:1.000e-05, loss:6062.893, Total time:0.827 min> 
+20-01-03 14:51:34 [/home/likai/Desktop/DPCL/trainer/trainer.py:145 - INFO ] Epoch: 11, Now Best Loss Change: 6062.8926
+20-01-03 14:51:34 [/home/likai/Desktop/DPCL/trainer/trainer.py:58 - INFO ] Start training from epoch: 12, iter: 1
+20-01-03 14:52:57 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:12, iter:100, lr:1.000e-05, loss:5763.261>
+20-01-03 14:54:21 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:12, iter:200, lr:1.000e-05, loss:5813.222>
+20-01-03 14:55:44 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:12, iter:300, lr:1.000e-05, loss:5814.719>
+20-01-03 14:57:08 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:12, iter:400, lr:1.000e-05, loss:5823.283>
+20-01-03 14:58:31 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:12, iter:500, lr:1.000e-05, loss:5811.243>
+20-01-03 14:58:31 [/home/likai/Desktop/DPCL/trainer/trainer.py:88 - INFO ] <epoch:12, iter:500, lr:1.000e-05, loss:5811.243, Total time:6.960 min> 
+20-01-03 14:58:31 [/home/likai/Desktop/DPCL/trainer/trainer.py:92 - INFO ] Start Validation from epoch: 12, iter: 1
+20-01-03 14:59:12 [/home/likai/Desktop/DPCL/trainer/trainer.py:110 - INFO ] <epoch:12, iter:100, lr:1.000e-05, loss:5975.025>
+20-01-03 14:59:21 [/home/likai/Desktop/DPCL/trainer/trainer.py:116 - INFO ] <epoch:12, iter:125, lr:1.000e-05, loss:5980.713, Total time:0.833 min> 
+20-01-03 14:59:41 [/home/likai/Desktop/DPCL/trainer/trainer.py:145 - INFO ] Epoch: 12, Now Best Loss Change: 5980.7129
+20-01-03 14:59:41 [/home/likai/Desktop/DPCL/trainer/trainer.py:58 - INFO ] Start training from epoch: 13, iter: 1
+20-01-03 15:01:05 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:13, iter:100, lr:1.000e-05, loss:5696.958>
+20-01-03 15:02:29 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:13, iter:200, lr:1.000e-05, loss:5732.112>
+20-01-03 15:03:51 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:13, iter:300, lr:1.000e-05, loss:5727.668>
+20-01-03 15:05:15 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:13, iter:400, lr:1.000e-05, loss:5713.026>
+20-01-03 15:06:39 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:13, iter:500, lr:1.000e-05, loss:5711.043>
+20-01-03 15:06:39 [/home/likai/Desktop/DPCL/trainer/trainer.py:88 - INFO ] <epoch:13, iter:500, lr:1.000e-05, loss:5711.043, Total time:6.978 min> 
+20-01-03 15:06:39 [/home/likai/Desktop/DPCL/trainer/trainer.py:92 - INFO ] Start Validation from epoch: 13, iter: 1
+20-01-03 15:07:19 [/home/likai/Desktop/DPCL/trainer/trainer.py:110 - INFO ] <epoch:13, iter:100, lr:1.000e-05, loss:5870.245>
+20-01-03 15:07:29 [/home/likai/Desktop/DPCL/trainer/trainer.py:116 - INFO ] <epoch:13, iter:125, lr:1.000e-05, loss:5880.617, Total time:0.826 min> 
+20-01-03 15:07:48 [/home/likai/Desktop/DPCL/trainer/trainer.py:145 - INFO ] Epoch: 13, Now Best Loss Change: 5880.6174
+20-01-03 15:07:48 [/home/likai/Desktop/DPCL/trainer/trainer.py:58 - INFO ] Start training from epoch: 14, iter: 1
+20-01-03 15:09:11 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:14, iter:100, lr:1.000e-05, loss:5582.026>
+20-01-03 15:10:34 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:14, iter:200, lr:1.000e-05, loss:5635.598>
+20-01-03 15:11:58 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:14, iter:300, lr:1.000e-05, loss:5618.505>
+20-01-03 15:13:21 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:14, iter:400, lr:1.000e-05, loss:5618.094>
+20-01-03 15:14:44 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:14, iter:500, lr:1.000e-05, loss:5615.964>
+20-01-03 15:14:44 [/home/likai/Desktop/DPCL/trainer/trainer.py:88 - INFO ] <epoch:14, iter:500, lr:1.000e-05, loss:5615.964, Total time:6.938 min> 
+20-01-03 15:14:44 [/home/likai/Desktop/DPCL/trainer/trainer.py:92 - INFO ] Start Validation from epoch: 14, iter: 1
+20-01-03 15:15:24 [/home/likai/Desktop/DPCL/trainer/trainer.py:110 - INFO ] <epoch:14, iter:100, lr:1.000e-05, loss:5806.962>
+20-01-03 15:15:34 [/home/likai/Desktop/DPCL/trainer/trainer.py:116 - INFO ] <epoch:14, iter:125, lr:1.000e-05, loss:5818.158, Total time:0.836 min> 
+20-01-03 15:15:54 [/home/likai/Desktop/DPCL/trainer/trainer.py:145 - INFO ] Epoch: 14, Now Best Loss Change: 5818.1575
+20-01-03 15:15:54 [/home/likai/Desktop/DPCL/trainer/trainer.py:58 - INFO ] Start training from epoch: 15, iter: 1
+20-01-03 15:17:19 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:15, iter:100, lr:1.000e-05, loss:5474.945>
+20-01-03 15:18:43 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:15, iter:200, lr:1.000e-05, loss:5504.261>
+20-01-03 15:20:05 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:15, iter:300, lr:1.000e-05, loss:5521.792>
+20-01-03 15:21:30 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:15, iter:400, lr:1.000e-05, loss:5526.393>
+20-01-03 15:22:52 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:15, iter:500, lr:1.000e-05, loss:5526.511>
+20-01-03 15:22:52 [/home/likai/Desktop/DPCL/trainer/trainer.py:88 - INFO ] <epoch:15, iter:500, lr:1.000e-05, loss:5526.511, Total time:6.970 min> 
+20-01-03 15:22:52 [/home/likai/Desktop/DPCL/trainer/trainer.py:92 - INFO ] Start Validation from epoch: 15, iter: 1
+20-01-03 15:23:32 [/home/likai/Desktop/DPCL/trainer/trainer.py:110 - INFO ] <epoch:15, iter:100, lr:1.000e-05, loss:5783.149>
+20-01-03 15:23:42 [/home/likai/Desktop/DPCL/trainer/trainer.py:116 - INFO ] <epoch:15, iter:125, lr:1.000e-05, loss:5786.699, Total time:0.823 min> 
+20-01-03 15:24:02 [/home/likai/Desktop/DPCL/trainer/trainer.py:145 - INFO ] Epoch: 15, Now Best Loss Change: 5786.6992
+20-01-03 15:24:02 [/home/likai/Desktop/DPCL/trainer/trainer.py:58 - INFO ] Start training from epoch: 16, iter: 1
+20-01-03 15:25:29 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:16, iter:100, lr:1.000e-05, loss:5380.311>
+20-01-03 15:26:52 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:16, iter:200, lr:1.000e-05, loss:5375.733>
+20-01-03 15:28:15 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:16, iter:300, lr:1.000e-05, loss:5407.138>
+20-01-03 15:29:39 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:16, iter:400, lr:1.000e-05, loss:5426.167>
+20-01-03 15:31:02 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:16, iter:500, lr:1.000e-05, loss:5442.192>
+20-01-03 15:31:02 [/home/likai/Desktop/DPCL/trainer/trainer.py:88 - INFO ] <epoch:16, iter:500, lr:1.000e-05, loss:5442.192, Total time:7.002 min> 
+20-01-03 15:31:02 [/home/likai/Desktop/DPCL/trainer/trainer.py:92 - INFO ] Start Validation from epoch: 16, iter: 1
+20-01-03 15:31:42 [/home/likai/Desktop/DPCL/trainer/trainer.py:110 - INFO ] <epoch:16, iter:100, lr:1.000e-05, loss:5710.372>
+20-01-03 15:31:51 [/home/likai/Desktop/DPCL/trainer/trainer.py:116 - INFO ] <epoch:16, iter:125, lr:1.000e-05, loss:5711.325, Total time:0.820 min> 
+20-01-03 15:32:11 [/home/likai/Desktop/DPCL/trainer/trainer.py:145 - INFO ] Epoch: 16, Now Best Loss Change: 5711.3251
+20-01-03 15:32:11 [/home/likai/Desktop/DPCL/trainer/trainer.py:58 - INFO ] Start training from epoch: 17, iter: 1
+20-01-03 15:33:36 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:17, iter:100, lr:1.000e-05, loss:5368.687>
+20-01-03 15:34:59 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:17, iter:200, lr:1.000e-05, loss:5348.425>
+20-01-03 15:36:23 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:17, iter:300, lr:1.000e-05, loss:5372.070>
+20-01-03 15:37:45 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:17, iter:400, lr:1.000e-05, loss:5368.924>
+20-01-03 15:39:09 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:17, iter:500, lr:1.000e-05, loss:5363.364>
+20-01-03 15:39:09 [/home/likai/Desktop/DPCL/trainer/trainer.py:88 - INFO ] <epoch:17, iter:500, lr:1.000e-05, loss:5363.364, Total time:6.977 min> 
+20-01-03 15:39:09 [/home/likai/Desktop/DPCL/trainer/trainer.py:92 - INFO ] Start Validation from epoch: 17, iter: 1
+20-01-03 15:39:49 [/home/likai/Desktop/DPCL/trainer/trainer.py:110 - INFO ] <epoch:17, iter:100, lr:1.000e-05, loss:5701.802>
+20-01-03 15:39:58 [/home/likai/Desktop/DPCL/trainer/trainer.py:116 - INFO ] <epoch:17, iter:125, lr:1.000e-05, loss:5689.142, Total time:0.815 min> 
+20-01-03 15:40:23 [/home/likai/Desktop/DPCL/trainer/trainer.py:145 - INFO ] Epoch: 17, Now Best Loss Change: 5689.1418
+20-01-03 15:40:23 [/home/likai/Desktop/DPCL/trainer/trainer.py:58 - INFO ] Start training from epoch: 18, iter: 1
+20-01-03 15:41:49 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:18, iter:100, lr:1.000e-05, loss:5289.150>
+20-01-03 15:43:13 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:18, iter:200, lr:1.000e-05, loss:5269.919>
+20-01-03 15:44:35 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:18, iter:300, lr:1.000e-05, loss:5261.855>
+20-01-03 15:45:58 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:18, iter:400, lr:1.000e-05, loss:5273.387>
+20-01-03 15:47:21 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:18, iter:500, lr:1.000e-05, loss:5280.394>
+20-01-03 15:47:22 [/home/likai/Desktop/DPCL/trainer/trainer.py:88 - INFO ] <epoch:18, iter:500, lr:1.000e-05, loss:5280.394, Total time:6.984 min> 
+20-01-03 15:47:22 [/home/likai/Desktop/DPCL/trainer/trainer.py:92 - INFO ] Start Validation from epoch: 18, iter: 1
+20-01-03 15:48:02 [/home/likai/Desktop/DPCL/trainer/trainer.py:110 - INFO ] <epoch:18, iter:100, lr:1.000e-05, loss:5645.067>
+20-01-03 15:48:12 [/home/likai/Desktop/DPCL/trainer/trainer.py:116 - INFO ] <epoch:18, iter:125, lr:1.000e-05, loss:5665.759, Total time:0.832 min> 
+20-01-03 15:48:34 [/home/likai/Desktop/DPCL/trainer/trainer.py:145 - INFO ] Epoch: 18, Now Best Loss Change: 5665.7592
+20-01-03 15:48:34 [/home/likai/Desktop/DPCL/trainer/trainer.py:58 - INFO ] Start training from epoch: 19, iter: 1
+20-01-03 15:50:01 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:19, iter:100, lr:1.000e-05, loss:5227.003>
+20-01-03 15:51:24 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:19, iter:200, lr:1.000e-05, loss:5220.360>
+20-01-03 15:52:47 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:19, iter:300, lr:1.000e-05, loss:5206.351>
+20-01-03 15:54:10 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:19, iter:400, lr:1.000e-05, loss:5206.536>
+20-01-03 15:55:32 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:19, iter:500, lr:1.000e-05, loss:5210.358>
+20-01-03 15:55:33 [/home/likai/Desktop/DPCL/trainer/trainer.py:88 - INFO ] <epoch:19, iter:500, lr:1.000e-05, loss:5210.358, Total time:6.975 min> 
+20-01-03 15:55:33 [/home/likai/Desktop/DPCL/trainer/trainer.py:92 - INFO ] Start Validation from epoch: 19, iter: 1
+20-01-03 15:56:13 [/home/likai/Desktop/DPCL/trainer/trainer.py:110 - INFO ] <epoch:19, iter:100, lr:1.000e-05, loss:5580.342>
+20-01-03 15:56:22 [/home/likai/Desktop/DPCL/trainer/trainer.py:116 - INFO ] <epoch:19, iter:125, lr:1.000e-05, loss:5614.318, Total time:0.827 min> 
+20-01-03 15:56:43 [/home/likai/Desktop/DPCL/trainer/trainer.py:145 - INFO ] Epoch: 19, Now Best Loss Change: 5614.3182
+20-01-03 15:56:43 [/home/likai/Desktop/DPCL/trainer/trainer.py:58 - INFO ] Start training from epoch: 20, iter: 1
+20-01-03 15:58:07 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:20, iter:100, lr:1.000e-05, loss:5168.655>
+20-01-03 15:59:30 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:20, iter:200, lr:1.000e-05, loss:5126.702>
+20-01-03 16:00:54 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:20, iter:300, lr:1.000e-05, loss:5113.535>
+20-01-03 16:02:16 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:20, iter:400, lr:1.000e-05, loss:5117.324>
+20-01-03 16:03:40 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:20, iter:500, lr:1.000e-05, loss:5136.200>
+20-01-03 16:03:40 [/home/likai/Desktop/DPCL/trainer/trainer.py:88 - INFO ] <epoch:20, iter:500, lr:1.000e-05, loss:5136.200, Total time:6.957 min> 
+20-01-03 16:03:40 [/home/likai/Desktop/DPCL/trainer/trainer.py:92 - INFO ] Start Validation from epoch: 20, iter: 1
+20-01-03 16:04:20 [/home/likai/Desktop/DPCL/trainer/trainer.py:110 - INFO ] <epoch:20, iter:100, lr:1.000e-05, loss:5559.241>
+20-01-03 16:04:30 [/home/likai/Desktop/DPCL/trainer/trainer.py:116 - INFO ] <epoch:20, iter:125, lr:1.000e-05, loss:5590.228, Total time:0.831 min> 
+20-01-03 16:04:49 [/home/likai/Desktop/DPCL/trainer/trainer.py:145 - INFO ] Epoch: 20, Now Best Loss Change: 5590.2276
+20-01-03 16:04:49 [/home/likai/Desktop/DPCL/trainer/trainer.py:58 - INFO ] Start training from epoch: 21, iter: 1
+20-01-03 16:06:15 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:21, iter:100, lr:1.000e-05, loss:5080.512>
+20-01-03 16:07:38 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:21, iter:200, lr:1.000e-05, loss:5055.333>
+20-01-03 16:09:02 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:21, iter:300, lr:1.000e-05, loss:5063.050>
+20-01-03 16:10:26 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:21, iter:400, lr:1.000e-05, loss:5070.611>
+20-01-03 16:11:49 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:21, iter:500, lr:1.000e-05, loss:5070.554>
+20-01-03 16:11:50 [/home/likai/Desktop/DPCL/trainer/trainer.py:88 - INFO ] <epoch:21, iter:500, lr:1.000e-05, loss:5070.554, Total time:7.009 min> 
+20-01-03 16:11:50 [/home/likai/Desktop/DPCL/trainer/trainer.py:92 - INFO ] Start Validation from epoch: 21, iter: 1
+20-01-03 16:12:30 [/home/likai/Desktop/DPCL/trainer/trainer.py:110 - INFO ] <epoch:21, iter:100, lr:1.000e-05, loss:5525.623>
+20-01-03 16:12:39 [/home/likai/Desktop/DPCL/trainer/trainer.py:116 - INFO ] <epoch:21, iter:125, lr:1.000e-05, loss:5545.790, Total time:0.829 min> 
+20-01-03 16:13:04 [/home/likai/Desktop/DPCL/trainer/trainer.py:145 - INFO ] Epoch: 21, Now Best Loss Change: 5545.7899
+20-01-03 16:13:04 [/home/likai/Desktop/DPCL/trainer/trainer.py:58 - INFO ] Start training from epoch: 22, iter: 1
+20-01-03 16:14:29 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:22, iter:100, lr:1.000e-05, loss:4992.938>
+20-01-03 16:15:52 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:22, iter:200, lr:1.000e-05, loss:5022.426>
+20-01-03 16:17:16 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:22, iter:300, lr:1.000e-05, loss:5017.105>
+20-01-03 16:18:39 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:22, iter:400, lr:1.000e-05, loss:5013.154>
+20-01-03 16:20:02 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:22, iter:500, lr:1.000e-05, loss:5006.568>
+20-01-03 16:20:02 [/home/likai/Desktop/DPCL/trainer/trainer.py:88 - INFO ] <epoch:22, iter:500, lr:1.000e-05, loss:5006.568, Total time:6.976 min> 
+20-01-03 16:20:02 [/home/likai/Desktop/DPCL/trainer/trainer.py:92 - INFO ] Start Validation from epoch: 22, iter: 1
+20-01-03 16:20:43 [/home/likai/Desktop/DPCL/trainer/trainer.py:110 - INFO ] <epoch:22, iter:100, lr:1.000e-05, loss:5492.664>
+20-01-03 16:20:53 [/home/likai/Desktop/DPCL/trainer/trainer.py:116 - INFO ] <epoch:22, iter:125, lr:1.000e-05, loss:5508.853, Total time:0.838 min> 
+20-01-03 16:21:17 [/home/likai/Desktop/DPCL/trainer/trainer.py:145 - INFO ] Epoch: 22, Now Best Loss Change: 5508.8526
+20-01-03 16:21:17 [/home/likai/Desktop/DPCL/trainer/trainer.py:58 - INFO ] Start training from epoch: 23, iter: 1
+20-01-03 16:22:43 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:23, iter:100, lr:1.000e-05, loss:4935.503>
+20-01-03 16:24:07 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:23, iter:200, lr:1.000e-05, loss:4972.893>
+20-01-03 16:25:29 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:23, iter:300, lr:1.000e-05, loss:4959.170>
+20-01-03 16:26:50 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:23, iter:400, lr:1.000e-05, loss:4944.795>
+20-01-03 16:28:13 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:23, iter:500, lr:1.000e-05, loss:4940.892>
+20-01-03 16:28:13 [/home/likai/Desktop/DPCL/trainer/trainer.py:88 - INFO ] <epoch:23, iter:500, lr:1.000e-05, loss:4940.892, Total time:6.943 min> 
+20-01-03 16:28:13 [/home/likai/Desktop/DPCL/trainer/trainer.py:92 - INFO ] Start Validation from epoch: 23, iter: 1
+20-01-03 16:28:53 [/home/likai/Desktop/DPCL/trainer/trainer.py:110 - INFO ] <epoch:23, iter:100, lr:1.000e-05, loss:5478.570>
+20-01-03 16:29:03 [/home/likai/Desktop/DPCL/trainer/trainer.py:116 - INFO ] <epoch:23, iter:125, lr:1.000e-05, loss:5469.174, Total time:0.832 min> 
+20-01-03 16:29:24 [/home/likai/Desktop/DPCL/trainer/trainer.py:145 - INFO ] Epoch: 23, Now Best Loss Change: 5469.1736
+20-01-03 16:29:24 [/home/likai/Desktop/DPCL/trainer/trainer.py:58 - INFO ] Start training from epoch: 24, iter: 1
+20-01-03 16:30:51 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:24, iter:100, lr:1.000e-05, loss:4886.018>
+20-01-03 16:32:13 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:24, iter:200, lr:1.000e-05, loss:4875.640>
+20-01-03 16:33:35 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:24, iter:300, lr:1.000e-05, loss:4861.599>
+20-01-03 16:34:58 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:24, iter:400, lr:1.000e-05, loss:4880.818>
+20-01-03 16:36:22 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:24, iter:500, lr:1.000e-05, loss:4880.322>
+20-01-03 16:36:22 [/home/likai/Desktop/DPCL/trainer/trainer.py:88 - INFO ] <epoch:24, iter:500, lr:1.000e-05, loss:4880.322, Total time:6.965 min> 
+20-01-03 16:36:22 [/home/likai/Desktop/DPCL/trainer/trainer.py:92 - INFO ] Start Validation from epoch: 24, iter: 1
+20-01-03 16:37:02 [/home/likai/Desktop/DPCL/trainer/trainer.py:110 - INFO ] <epoch:24, iter:100, lr:1.000e-05, loss:5418.480>
+20-01-03 16:37:12 [/home/likai/Desktop/DPCL/trainer/trainer.py:116 - INFO ] <epoch:24, iter:125, lr:1.000e-05, loss:5442.462, Total time:0.825 min> 
+20-01-03 16:37:31 [/home/likai/Desktop/DPCL/trainer/trainer.py:145 - INFO ] Epoch: 24, Now Best Loss Change: 5442.4624
+20-01-03 16:37:31 [/home/likai/Desktop/DPCL/trainer/trainer.py:58 - INFO ] Start training from epoch: 25, iter: 1
+20-01-03 16:38:56 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:25, iter:100, lr:1.000e-05, loss:4800.918>
+20-01-03 16:40:20 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:25, iter:200, lr:1.000e-05, loss:4810.260>
+20-01-03 16:41:44 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:25, iter:300, lr:1.000e-05, loss:4805.247>
+20-01-03 16:43:08 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:25, iter:400, lr:1.000e-05, loss:4823.146>
+20-01-03 16:44:31 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:25, iter:500, lr:1.000e-05, loss:4820.054>
+20-01-03 16:44:31 [/home/likai/Desktop/DPCL/trainer/trainer.py:88 - INFO ] <epoch:25, iter:500, lr:1.000e-05, loss:4820.054, Total time:6.998 min> 
+20-01-03 16:44:31 [/home/likai/Desktop/DPCL/trainer/trainer.py:92 - INFO ] Start Validation from epoch: 25, iter: 1
+20-01-03 16:45:10 [/home/likai/Desktop/DPCL/trainer/trainer.py:110 - INFO ] <epoch:25, iter:100, lr:1.000e-05, loss:5403.843>
+20-01-03 16:45:20 [/home/likai/Desktop/DPCL/trainer/trainer.py:116 - INFO ] <epoch:25, iter:125, lr:1.000e-05, loss:5421.202, Total time:0.821 min> 
+20-01-03 16:45:44 [/home/likai/Desktop/DPCL/trainer/trainer.py:145 - INFO ] Epoch: 25, Now Best Loss Change: 5421.2015
+20-01-03 16:45:44 [/home/likai/Desktop/DPCL/trainer/trainer.py:58 - INFO ] Start training from epoch: 26, iter: 1
+20-01-03 16:47:10 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:26, iter:100, lr:1.000e-05, loss:4784.280>
+20-01-03 16:48:32 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:26, iter:200, lr:1.000e-05, loss:4780.382>
+20-01-03 16:49:54 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:26, iter:300, lr:1.000e-05, loss:4784.451>
+20-01-03 16:51:17 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:26, iter:400, lr:1.000e-05, loss:4779.518>
+20-01-03 16:52:40 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:26, iter:500, lr:1.000e-05, loss:4765.346>
+20-01-03 16:52:40 [/home/likai/Desktop/DPCL/trainer/trainer.py:88 - INFO ] <epoch:26, iter:500, lr:1.000e-05, loss:4765.346, Total time:6.930 min> 
+20-01-03 16:52:40 [/home/likai/Desktop/DPCL/trainer/trainer.py:92 - INFO ] Start Validation from epoch: 26, iter: 1
+20-01-03 16:53:20 [/home/likai/Desktop/DPCL/trainer/trainer.py:110 - INFO ] <epoch:26, iter:100, lr:1.000e-05, loss:5438.203>
+20-01-03 16:53:30 [/home/likai/Desktop/DPCL/trainer/trainer.py:116 - INFO ] <epoch:26, iter:125, lr:1.000e-05, loss:5414.761, Total time:0.823 min> 
+20-01-03 16:53:54 [/home/likai/Desktop/DPCL/trainer/trainer.py:145 - INFO ] Epoch: 26, Now Best Loss Change: 5414.7608
+20-01-03 16:53:54 [/home/likai/Desktop/DPCL/trainer/trainer.py:58 - INFO ] Start training from epoch: 27, iter: 1
+20-01-03 16:55:18 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:27, iter:100, lr:1.000e-05, loss:4696.178>
+20-01-03 16:56:42 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:27, iter:200, lr:1.000e-05, loss:4722.960>
+20-01-03 16:58:04 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:27, iter:300, lr:1.000e-05, loss:4711.804>
+20-01-03 16:59:25 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:27, iter:400, lr:1.000e-05, loss:4706.665>
+20-01-03 17:00:49 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:27, iter:500, lr:1.000e-05, loss:4706.449>
+20-01-03 17:00:49 [/home/likai/Desktop/DPCL/trainer/trainer.py:88 - INFO ] <epoch:27, iter:500, lr:1.000e-05, loss:4706.449, Total time:6.915 min> 
+20-01-03 17:00:49 [/home/likai/Desktop/DPCL/trainer/trainer.py:92 - INFO ] Start Validation from epoch: 27, iter: 1
+20-01-03 17:01:28 [/home/likai/Desktop/DPCL/trainer/trainer.py:110 - INFO ] <epoch:27, iter:100, lr:1.000e-05, loss:5402.799>
+20-01-03 17:01:38 [/home/likai/Desktop/DPCL/trainer/trainer.py:116 - INFO ] <epoch:27, iter:125, lr:1.000e-05, loss:5418.453, Total time:0.821 min> 
+20-01-03 17:01:38 [/home/likai/Desktop/DPCL/trainer/trainer.py:140 - INFO ] No improvement, Best Loss: 5414.7608
+20-01-03 17:01:38 [/home/likai/Desktop/DPCL/trainer/trainer.py:58 - INFO ] Start training from epoch: 28, iter: 1
+20-01-03 17:03:04 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:28, iter:100, lr:1.000e-05, loss:4652.324>
+20-01-03 17:04:26 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:28, iter:200, lr:1.000e-05, loss:4628.227>
+20-01-03 17:05:49 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:28, iter:300, lr:1.000e-05, loss:4645.790>
+20-01-03 17:07:13 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:28, iter:400, lr:1.000e-05, loss:4657.059>
+20-01-03 17:08:35 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:28, iter:500, lr:1.000e-05, loss:4661.510>
+20-01-03 17:08:35 [/home/likai/Desktop/DPCL/trainer/trainer.py:88 - INFO ] <epoch:28, iter:500, lr:1.000e-05, loss:4661.510, Total time:6.947 min> 
+20-01-03 17:08:35 [/home/likai/Desktop/DPCL/trainer/trainer.py:92 - INFO ] Start Validation from epoch: 28, iter: 1
+20-01-03 17:09:15 [/home/likai/Desktop/DPCL/trainer/trainer.py:110 - INFO ] <epoch:28, iter:100, lr:1.000e-05, loss:5378.631>
+20-01-03 17:09:25 [/home/likai/Desktop/DPCL/trainer/trainer.py:116 - INFO ] <epoch:28, iter:125, lr:1.000e-05, loss:5370.229, Total time:0.832 min> 
+20-01-03 17:09:46 [/home/likai/Desktop/DPCL/trainer/trainer.py:145 - INFO ] Epoch: 28, Now Best Loss Change: 5370.2292
+20-01-03 17:09:46 [/home/likai/Desktop/DPCL/trainer/trainer.py:58 - INFO ] Start training from epoch: 29, iter: 1
+20-01-03 17:11:11 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:29, iter:100, lr:1.000e-05, loss:4552.020>
+20-01-03 17:12:35 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:29, iter:200, lr:1.000e-05, loss:4589.423>
+20-01-03 17:13:59 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:29, iter:300, lr:1.000e-05, loss:4593.174>
+20-01-03 17:15:22 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:29, iter:400, lr:1.000e-05, loss:4606.111>
+20-01-03 17:16:45 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:29, iter:500, lr:1.000e-05, loss:4607.872>
+20-01-03 17:16:45 [/home/likai/Desktop/DPCL/trainer/trainer.py:88 - INFO ] <epoch:29, iter:500, lr:1.000e-05, loss:4607.872, Total time:6.989 min> 
+20-01-03 17:16:45 [/home/likai/Desktop/DPCL/trainer/trainer.py:92 - INFO ] Start Validation from epoch: 29, iter: 1
+20-01-03 17:17:25 [/home/likai/Desktop/DPCL/trainer/trainer.py:110 - INFO ] <epoch:29, iter:100, lr:1.000e-05, loss:5341.824>
+20-01-03 17:17:34 [/home/likai/Desktop/DPCL/trainer/trainer.py:116 - INFO ] <epoch:29, iter:125, lr:1.000e-05, loss:5347.413, Total time:0.823 min> 
+20-01-03 17:17:54 [/home/likai/Desktop/DPCL/trainer/trainer.py:145 - INFO ] Epoch: 29, Now Best Loss Change: 5347.4128
+20-01-03 17:17:54 [/home/likai/Desktop/DPCL/trainer/trainer.py:58 - INFO ] Start training from epoch: 30, iter: 1
+20-01-03 17:19:20 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:30, iter:100, lr:1.000e-05, loss:4562.208>
+20-01-03 17:20:43 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:30, iter:200, lr:1.000e-05, loss:4571.903>
+20-01-03 17:22:06 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:30, iter:300, lr:1.000e-05, loss:4550.213>
+20-01-03 17:23:28 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:30, iter:400, lr:1.000e-05, loss:4552.795>
+20-01-03 17:24:52 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:30, iter:500, lr:1.000e-05, loss:4553.657>
+20-01-03 17:24:52 [/home/likai/Desktop/DPCL/trainer/trainer.py:88 - INFO ] <epoch:30, iter:500, lr:1.000e-05, loss:4553.657, Total time:6.974 min> 
+20-01-03 17:24:52 [/home/likai/Desktop/DPCL/trainer/trainer.py:92 - INFO ] Start Validation from epoch: 30, iter: 1
+20-01-03 17:25:32 [/home/likai/Desktop/DPCL/trainer/trainer.py:110 - INFO ] <epoch:30, iter:100, lr:1.000e-05, loss:5299.255>
+20-01-03 17:25:41 [/home/likai/Desktop/DPCL/trainer/trainer.py:116 - INFO ] <epoch:30, iter:125, lr:1.000e-05, loss:5348.095, Total time:0.816 min> 
+20-01-03 17:25:41 [/home/likai/Desktop/DPCL/trainer/trainer.py:140 - INFO ] No improvement, Best Loss: 5347.4128
+20-01-03 17:25:41 [/home/likai/Desktop/DPCL/trainer/trainer.py:58 - INFO ] Start training from epoch: 31, iter: 1
+20-01-03 17:27:06 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:31, iter:100, lr:1.000e-05, loss:4489.583>
+20-01-03 17:28:29 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:31, iter:200, lr:1.000e-05, loss:4482.112>
+20-01-03 17:29:52 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:31, iter:300, lr:1.000e-05, loss:4496.292>
+20-01-03 17:31:13 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:31, iter:400, lr:1.000e-05, loss:4498.043>
+20-01-03 17:32:36 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:31, iter:500, lr:1.000e-05, loss:4505.361>
+20-01-03 17:32:36 [/home/likai/Desktop/DPCL/trainer/trainer.py:88 - INFO ] <epoch:31, iter:500, lr:1.000e-05, loss:4505.361, Total time:6.920 min> 
+20-01-03 17:32:36 [/home/likai/Desktop/DPCL/trainer/trainer.py:92 - INFO ] Start Validation from epoch: 31, iter: 1
+20-01-03 17:33:16 [/home/likai/Desktop/DPCL/trainer/trainer.py:110 - INFO ] <epoch:31, iter:100, lr:1.000e-05, loss:5343.421>
+20-01-03 17:33:26 [/home/likai/Desktop/DPCL/trainer/trainer.py:116 - INFO ] <epoch:31, iter:125, lr:1.000e-05, loss:5329.493, Total time:0.824 min> 
+20-01-03 17:33:50 [/home/likai/Desktop/DPCL/trainer/trainer.py:145 - INFO ] Epoch: 31, Now Best Loss Change: 5329.4932
+20-01-03 17:33:50 [/home/likai/Desktop/DPCL/trainer/trainer.py:58 - INFO ] Start training from epoch: 32, iter: 1
+20-01-03 17:35:15 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:32, iter:100, lr:1.000e-05, loss:4421.360>
+20-01-03 17:36:38 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:32, iter:200, lr:1.000e-05, loss:4421.980>
+20-01-03 17:38:00 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:32, iter:300, lr:1.000e-05, loss:4446.561>
+20-01-03 17:39:24 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:32, iter:400, lr:1.000e-05, loss:4462.425>
+20-01-03 17:40:47 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:32, iter:500, lr:1.000e-05, loss:4469.013>
+20-01-03 17:40:47 [/home/likai/Desktop/DPCL/trainer/trainer.py:88 - INFO ] <epoch:32, iter:500, lr:1.000e-05, loss:4469.013, Total time:6.956 min> 
+20-01-03 17:40:47 [/home/likai/Desktop/DPCL/trainer/trainer.py:92 - INFO ] Start Validation from epoch: 32, iter: 1
+20-01-03 17:41:27 [/home/likai/Desktop/DPCL/trainer/trainer.py:110 - INFO ] <epoch:32, iter:100, lr:1.000e-05, loss:5318.463>
+20-01-03 17:41:37 [/home/likai/Desktop/DPCL/trainer/trainer.py:116 - INFO ] <epoch:32, iter:125, lr:1.000e-05, loss:5306.563, Total time:0.829 min> 
+20-01-03 17:42:01 [/home/likai/Desktop/DPCL/trainer/trainer.py:145 - INFO ] Epoch: 32, Now Best Loss Change: 5306.5634
+20-01-03 17:42:01 [/home/likai/Desktop/DPCL/trainer/trainer.py:58 - INFO ] Start training from epoch: 33, iter: 1
+20-01-03 17:43:28 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:33, iter:100, lr:1.000e-05, loss:4476.852>
+20-01-03 17:44:51 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:33, iter:200, lr:1.000e-05, loss:4446.028>
+20-01-03 17:46:14 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:33, iter:300, lr:1.000e-05, loss:4420.450>
+20-01-03 17:47:37 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:33, iter:400, lr:1.000e-05, loss:4417.752>
+20-01-03 17:48:59 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:33, iter:500, lr:1.000e-05, loss:4418.525>
+20-01-03 17:48:59 [/home/likai/Desktop/DPCL/trainer/trainer.py:88 - INFO ] <epoch:33, iter:500, lr:1.000e-05, loss:4418.525, Total time:6.966 min> 
+20-01-03 17:48:59 [/home/likai/Desktop/DPCL/trainer/trainer.py:92 - INFO ] Start Validation from epoch: 33, iter: 1
+20-01-03 17:49:39 [/home/likai/Desktop/DPCL/trainer/trainer.py:110 - INFO ] <epoch:33, iter:100, lr:1.000e-05, loss:5310.340>
+20-01-03 17:49:49 [/home/likai/Desktop/DPCL/trainer/trainer.py:116 - INFO ] <epoch:33, iter:125, lr:1.000e-05, loss:5297.085, Total time:0.833 min> 
+20-01-03 17:50:10 [/home/likai/Desktop/DPCL/trainer/trainer.py:145 - INFO ] Epoch: 33, Now Best Loss Change: 5297.0848
+20-01-03 17:50:10 [/home/likai/Desktop/DPCL/trainer/trainer.py:58 - INFO ] Start training from epoch: 34, iter: 1
+20-01-03 17:51:35 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:34, iter:100, lr:1.000e-05, loss:4385.787>
+20-01-03 17:53:00 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:34, iter:200, lr:1.000e-05, loss:4381.787>
+20-01-03 17:54:22 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:34, iter:300, lr:1.000e-05, loss:4373.658>
+20-01-03 17:55:46 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:34, iter:400, lr:1.000e-05, loss:4374.165>
+20-01-03 17:57:08 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:34, iter:500, lr:1.000e-05, loss:4376.439>
+20-01-03 17:57:08 [/home/likai/Desktop/DPCL/trainer/trainer.py:88 - INFO ] <epoch:34, iter:500, lr:1.000e-05, loss:4376.439, Total time:6.961 min> 
+20-01-03 17:57:08 [/home/likai/Desktop/DPCL/trainer/trainer.py:92 - INFO ] Start Validation from epoch: 34, iter: 1
+20-01-03 17:57:48 [/home/likai/Desktop/DPCL/trainer/trainer.py:110 - INFO ] <epoch:34, iter:100, lr:1.000e-05, loss:5253.825>
+20-01-03 17:57:57 [/home/likai/Desktop/DPCL/trainer/trainer.py:116 - INFO ] <epoch:34, iter:125, lr:1.000e-05, loss:5275.836, Total time:0.825 min> 
+20-01-03 17:58:17 [/home/likai/Desktop/DPCL/trainer/trainer.py:145 - INFO ] Epoch: 34, Now Best Loss Change: 5275.8356
+20-01-03 17:58:17 [/home/likai/Desktop/DPCL/trainer/trainer.py:58 - INFO ] Start training from epoch: 35, iter: 1
+20-01-03 17:59:43 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:35, iter:100, lr:1.000e-05, loss:4298.117>
+20-01-03 18:01:06 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:35, iter:200, lr:1.000e-05, loss:4292.934>
+20-01-03 18:02:29 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:35, iter:300, lr:1.000e-05, loss:4310.299>
+20-01-03 18:03:54 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:35, iter:400, lr:1.000e-05, loss:4337.457>
+20-01-03 18:05:16 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:35, iter:500, lr:1.000e-05, loss:4339.509>
+20-01-03 18:05:16 [/home/likai/Desktop/DPCL/trainer/trainer.py:88 - INFO ] <epoch:35, iter:500, lr:1.000e-05, loss:4339.509, Total time:6.992 min> 
+20-01-03 18:05:16 [/home/likai/Desktop/DPCL/trainer/trainer.py:92 - INFO ] Start Validation from epoch: 35, iter: 1
+20-01-03 18:05:56 [/home/likai/Desktop/DPCL/trainer/trainer.py:110 - INFO ] <epoch:35, iter:100, lr:1.000e-05, loss:5252.196>
+20-01-03 18:06:05 [/home/likai/Desktop/DPCL/trainer/trainer.py:116 - INFO ] <epoch:35, iter:125, lr:1.000e-05, loss:5254.885, Total time:0.818 min> 
+20-01-03 18:06:29 [/home/likai/Desktop/DPCL/trainer/trainer.py:145 - INFO ] Epoch: 35, Now Best Loss Change: 5254.8852
+20-01-03 18:06:29 [/home/likai/Desktop/DPCL/trainer/trainer.py:58 - INFO ] Start training from epoch: 36, iter: 1
+20-01-03 18:07:54 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:36, iter:100, lr:1.000e-05, loss:4333.400>
+20-01-03 18:09:17 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:36, iter:200, lr:1.000e-05, loss:4296.774>
+20-01-03 18:10:39 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:36, iter:300, lr:1.000e-05, loss:4300.275>
+20-01-03 18:12:03 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:36, iter:400, lr:1.000e-05, loss:4298.003>
+20-01-03 18:13:26 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:36, iter:500, lr:1.000e-05, loss:4298.395>
+20-01-03 18:13:26 [/home/likai/Desktop/DPCL/trainer/trainer.py:88 - INFO ] <epoch:36, iter:500, lr:1.000e-05, loss:4298.395, Total time:6.948 min> 
+20-01-03 18:13:26 [/home/likai/Desktop/DPCL/trainer/trainer.py:92 - INFO ] Start Validation from epoch: 36, iter: 1
+20-01-03 18:14:06 [/home/likai/Desktop/DPCL/trainer/trainer.py:110 - INFO ] <epoch:36, iter:100, lr:1.000e-05, loss:5236.594>
+20-01-03 18:14:16 [/home/likai/Desktop/DPCL/trainer/trainer.py:116 - INFO ] <epoch:36, iter:125, lr:1.000e-05, loss:5251.348, Total time:0.823 min> 
+20-01-03 18:14:39 [/home/likai/Desktop/DPCL/trainer/trainer.py:145 - INFO ] Epoch: 36, Now Best Loss Change: 5251.3485
+20-01-03 18:14:39 [/home/likai/Desktop/DPCL/trainer/trainer.py:58 - INFO ] Start training from epoch: 37, iter: 1
+20-01-03 18:16:05 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:37, iter:100, lr:1.000e-05, loss:4258.976>
+20-01-03 18:17:27 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:37, iter:200, lr:1.000e-05, loss:4244.516>
+20-01-03 18:18:51 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:37, iter:300, lr:1.000e-05, loss:4250.270>
+20-01-03 18:20:15 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:37, iter:400, lr:1.000e-05, loss:4261.323>
+20-01-03 18:21:37 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:37, iter:500, lr:1.000e-05, loss:4262.630>
+20-01-03 18:21:37 [/home/likai/Desktop/DPCL/trainer/trainer.py:88 - INFO ] <epoch:37, iter:500, lr:1.000e-05, loss:4262.630, Total time:6.963 min> 
+20-01-03 18:21:37 [/home/likai/Desktop/DPCL/trainer/trainer.py:92 - INFO ] Start Validation from epoch: 37, iter: 1
+20-01-03 18:22:17 [/home/likai/Desktop/DPCL/trainer/trainer.py:110 - INFO ] <epoch:37, iter:100, lr:1.000e-05, loss:5291.070>
+20-01-03 18:22:27 [/home/likai/Desktop/DPCL/trainer/trainer.py:116 - INFO ] <epoch:37, iter:125, lr:1.000e-05, loss:5276.890, Total time:0.831 min> 
+20-01-03 18:22:27 [/home/likai/Desktop/DPCL/trainer/trainer.py:140 - INFO ] No improvement, Best Loss: 5251.3485
+20-01-03 18:22:27 [/home/likai/Desktop/DPCL/trainer/trainer.py:58 - INFO ] Start training from epoch: 38, iter: 1
+20-01-03 18:23:52 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:38, iter:100, lr:1.000e-05, loss:4239.088>
+20-01-03 18:25:15 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:38, iter:200, lr:1.000e-05, loss:4224.245>
+20-01-03 18:26:38 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:38, iter:300, lr:1.000e-05, loss:4208.115>
+20-01-03 18:28:01 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:38, iter:400, lr:1.000e-05, loss:4212.187>
+20-01-03 18:29:24 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:38, iter:500, lr:1.000e-05, loss:4218.714>
+20-01-03 18:29:24 [/home/likai/Desktop/DPCL/trainer/trainer.py:88 - INFO ] <epoch:38, iter:500, lr:1.000e-05, loss:4218.714, Total time:6.949 min> 
+20-01-03 18:29:24 [/home/likai/Desktop/DPCL/trainer/trainer.py:92 - INFO ] Start Validation from epoch: 38, iter: 1
+20-01-03 18:30:04 [/home/likai/Desktop/DPCL/trainer/trainer.py:110 - INFO ] <epoch:38, iter:100, lr:1.000e-05, loss:5228.118>
+20-01-03 18:30:14 [/home/likai/Desktop/DPCL/trainer/trainer.py:116 - INFO ] <epoch:38, iter:125, lr:1.000e-05, loss:5219.243, Total time:0.829 min> 
+20-01-03 18:30:35 [/home/likai/Desktop/DPCL/trainer/trainer.py:145 - INFO ] Epoch: 38, Now Best Loss Change: 5219.2434
+20-01-03 18:30:35 [/home/likai/Desktop/DPCL/trainer/trainer.py:58 - INFO ] Start training from epoch: 39, iter: 1
+20-01-03 18:32:00 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:39, iter:100, lr:1.000e-05, loss:4227.166>
+20-01-03 18:33:22 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:39, iter:200, lr:1.000e-05, loss:4192.307>
+20-01-03 18:34:45 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:39, iter:300, lr:1.000e-05, loss:4191.470>
+20-01-03 18:36:07 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:39, iter:400, lr:1.000e-05, loss:4184.757>
+20-01-03 18:37:30 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:39, iter:500, lr:1.000e-05, loss:4186.406>
+20-01-03 18:37:30 [/home/likai/Desktop/DPCL/trainer/trainer.py:88 - INFO ] <epoch:39, iter:500, lr:1.000e-05, loss:4186.406, Total time:6.926 min> 
+20-01-03 18:37:30 [/home/likai/Desktop/DPCL/trainer/trainer.py:92 - INFO ] Start Validation from epoch: 39, iter: 1
+20-01-03 18:38:10 [/home/likai/Desktop/DPCL/trainer/trainer.py:110 - INFO ] <epoch:39, iter:100, lr:1.000e-05, loss:5222.067>
+20-01-03 18:38:19 [/home/likai/Desktop/DPCL/trainer/trainer.py:116 - INFO ] <epoch:39, iter:125, lr:1.000e-05, loss:5215.134, Total time:0.818 min> 
+20-01-03 18:38:39 [/home/likai/Desktop/DPCL/trainer/trainer.py:145 - INFO ] Epoch: 39, Now Best Loss Change: 5215.1338
+20-01-03 18:38:39 [/home/likai/Desktop/DPCL/trainer/trainer.py:58 - INFO ] Start training from epoch: 40, iter: 1
+20-01-03 18:40:03 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:40, iter:100, lr:1.000e-05, loss:4128.326>
+20-01-03 18:41:26 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:40, iter:200, lr:1.000e-05, loss:4110.073>
+20-01-03 18:42:49 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:40, iter:300, lr:1.000e-05, loss:4126.981>
+20-01-03 18:44:13 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:40, iter:400, lr:1.000e-05, loss:4132.313>
+20-01-03 18:45:37 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:40, iter:500, lr:1.000e-05, loss:4141.415>
+20-01-03 18:45:37 [/home/likai/Desktop/DPCL/trainer/trainer.py:88 - INFO ] <epoch:40, iter:500, lr:1.000e-05, loss:4141.415, Total time:6.971 min> 
+20-01-03 18:45:37 [/home/likai/Desktop/DPCL/trainer/trainer.py:92 - INFO ] Start Validation from epoch: 40, iter: 1
+20-01-03 18:46:18 [/home/likai/Desktop/DPCL/trainer/trainer.py:110 - INFO ] <epoch:40, iter:100, lr:1.000e-05, loss:5212.518>
+20-01-03 18:46:27 [/home/likai/Desktop/DPCL/trainer/trainer.py:116 - INFO ] <epoch:40, iter:125, lr:1.000e-05, loss:5194.948, Total time:0.828 min> 
+20-01-03 18:46:46 [/home/likai/Desktop/DPCL/trainer/trainer.py:145 - INFO ] Epoch: 40, Now Best Loss Change: 5194.9477
+20-01-03 18:46:46 [/home/likai/Desktop/DPCL/trainer/trainer.py:58 - INFO ] Start training from epoch: 41, iter: 1
+20-01-03 18:48:11 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:41, iter:100, lr:1.000e-05, loss:4045.439>
+20-01-03 18:49:33 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:41, iter:200, lr:1.000e-05, loss:4077.934>
+20-01-03 18:50:57 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:41, iter:300, lr:1.000e-05, loss:4091.842>
+20-01-03 18:52:21 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:41, iter:400, lr:1.000e-05, loss:4103.178>
+20-01-03 18:53:44 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:41, iter:500, lr:1.000e-05, loss:4110.060>
+20-01-03 18:53:44 [/home/likai/Desktop/DPCL/trainer/trainer.py:88 - INFO ] <epoch:41, iter:500, lr:1.000e-05, loss:4110.060, Total time:6.963 min> 
+20-01-03 18:53:44 [/home/likai/Desktop/DPCL/trainer/trainer.py:92 - INFO ] Start Validation from epoch: 41, iter: 1
+20-01-03 18:54:24 [/home/likai/Desktop/DPCL/trainer/trainer.py:110 - INFO ] <epoch:41, iter:100, lr:1.000e-05, loss:5228.641>
+20-01-03 18:54:34 [/home/likai/Desktop/DPCL/trainer/trainer.py:116 - INFO ] <epoch:41, iter:125, lr:1.000e-05, loss:5221.688, Total time:0.828 min> 
+20-01-03 18:54:34 [/home/likai/Desktop/DPCL/trainer/trainer.py:140 - INFO ] No improvement, Best Loss: 5194.9477
+20-01-03 18:54:34 [/home/likai/Desktop/DPCL/trainer/trainer.py:58 - INFO ] Start training from epoch: 42, iter: 1
+20-01-03 18:55:59 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:42, iter:100, lr:1.000e-05, loss:4036.901>
+20-01-03 18:57:22 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:42, iter:200, lr:1.000e-05, loss:4037.603>
+20-01-03 18:58:46 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:42, iter:300, lr:1.000e-05, loss:4056.092>
+20-01-03 19:00:09 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:42, iter:400, lr:1.000e-05, loss:4060.803>
+20-01-03 19:01:32 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:42, iter:500, lr:1.000e-05, loss:4072.006>
+20-01-03 19:01:32 [/home/likai/Desktop/DPCL/trainer/trainer.py:88 - INFO ] <epoch:42, iter:500, lr:1.000e-05, loss:4072.006, Total time:6.977 min> 
+20-01-03 19:01:32 [/home/likai/Desktop/DPCL/trainer/trainer.py:92 - INFO ] Start Validation from epoch: 42, iter: 1
+20-01-03 19:02:13 [/home/likai/Desktop/DPCL/trainer/trainer.py:110 - INFO ] <epoch:42, iter:100, lr:1.000e-05, loss:5234.111>
+20-01-03 19:02:22 [/home/likai/Desktop/DPCL/trainer/trainer.py:116 - INFO ] <epoch:42, iter:125, lr:1.000e-05, loss:5192.928, Total time:0.824 min> 
+20-01-03 19:02:46 [/home/likai/Desktop/DPCL/trainer/trainer.py:145 - INFO ] Epoch: 42, Now Best Loss Change: 5192.9279
+20-01-03 19:02:46 [/home/likai/Desktop/DPCL/trainer/trainer.py:58 - INFO ] Start training from epoch: 43, iter: 1
+20-01-03 19:04:10 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:43, iter:100, lr:1.000e-05, loss:4020.482>
+20-01-03 19:05:34 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:43, iter:200, lr:1.000e-05, loss:4025.059>
+20-01-03 19:06:58 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:43, iter:300, lr:1.000e-05, loss:4022.457>
+20-01-03 19:08:22 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:43, iter:400, lr:1.000e-05, loss:4030.769>
+20-01-03 19:09:44 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:43, iter:500, lr:1.000e-05, loss:4037.732>
+20-01-03 19:09:44 [/home/likai/Desktop/DPCL/trainer/trainer.py:88 - INFO ] <epoch:43, iter:500, lr:1.000e-05, loss:4037.732, Total time:6.963 min> 
+20-01-03 19:09:44 [/home/likai/Desktop/DPCL/trainer/trainer.py:92 - INFO ] Start Validation from epoch: 43, iter: 1
+20-01-03 19:10:24 [/home/likai/Desktop/DPCL/trainer/trainer.py:110 - INFO ] <epoch:43, iter:100, lr:1.000e-05, loss:5187.180>
+20-01-03 19:10:34 [/home/likai/Desktop/DPCL/trainer/trainer.py:116 - INFO ] <epoch:43, iter:125, lr:1.000e-05, loss:5168.623, Total time:0.830 min> 
+20-01-03 19:10:54 [/home/likai/Desktop/DPCL/trainer/trainer.py:145 - INFO ] Epoch: 43, Now Best Loss Change: 5168.6234
+20-01-03 19:10:54 [/home/likai/Desktop/DPCL/trainer/trainer.py:58 - INFO ] Start training from epoch: 44, iter: 1
+20-01-03 19:12:20 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:44, iter:100, lr:1.000e-05, loss:3982.522>
+20-01-03 19:13:44 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:44, iter:200, lr:1.000e-05, loss:3990.201>
+20-01-03 19:15:07 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:44, iter:300, lr:1.000e-05, loss:4001.157>
+20-01-03 19:16:30 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:44, iter:400, lr:1.000e-05, loss:3999.978>
+20-01-03 19:17:52 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:44, iter:500, lr:1.000e-05, loss:4003.339>
+20-01-03 19:17:53 [/home/likai/Desktop/DPCL/trainer/trainer.py:88 - INFO ] <epoch:44, iter:500, lr:1.000e-05, loss:4003.339, Total time:6.968 min> 
+20-01-03 19:17:53 [/home/likai/Desktop/DPCL/trainer/trainer.py:92 - INFO ] Start Validation from epoch: 44, iter: 1
+20-01-03 19:18:32 [/home/likai/Desktop/DPCL/trainer/trainer.py:110 - INFO ] <epoch:44, iter:100, lr:1.000e-05, loss:5172.396>
+20-01-03 19:18:42 [/home/likai/Desktop/DPCL/trainer/trainer.py:116 - INFO ] <epoch:44, iter:125, lr:1.000e-05, loss:5197.791, Total time:0.830 min> 
+20-01-03 19:18:42 [/home/likai/Desktop/DPCL/trainer/trainer.py:140 - INFO ] No improvement, Best Loss: 5168.6234
+20-01-03 19:18:42 [/home/likai/Desktop/DPCL/trainer/trainer.py:58 - INFO ] Start training from epoch: 45, iter: 1
+20-01-03 19:20:06 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:45, iter:100, lr:1.000e-05, loss:3951.738>
+20-01-03 19:21:30 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:45, iter:200, lr:1.000e-05, loss:3942.278>
+20-01-03 19:22:52 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:45, iter:300, lr:1.000e-05, loss:3955.565>
+20-01-03 19:24:16 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:45, iter:400, lr:1.000e-05, loss:3965.443>
+20-01-03 19:25:39 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:45, iter:500, lr:1.000e-05, loss:3962.705>
+20-01-03 19:25:40 [/home/likai/Desktop/DPCL/trainer/trainer.py:88 - INFO ] <epoch:45, iter:500, lr:1.000e-05, loss:3962.705, Total time:6.954 min> 
+20-01-03 19:25:40 [/home/likai/Desktop/DPCL/trainer/trainer.py:92 - INFO ] Start Validation from epoch: 45, iter: 1
+20-01-03 19:26:20 [/home/likai/Desktop/DPCL/trainer/trainer.py:110 - INFO ] <epoch:45, iter:100, lr:1.000e-05, loss:5166.676>
+20-01-03 19:26:29 [/home/likai/Desktop/DPCL/trainer/trainer.py:116 - INFO ] <epoch:45, iter:125, lr:1.000e-05, loss:5182.790, Total time:0.829 min> 
+20-01-03 19:26:29 [/home/likai/Desktop/DPCL/trainer/trainer.py:140 - INFO ] No improvement, Best Loss: 5168.6234
+20-01-03 19:26:29 [/home/likai/Desktop/DPCL/trainer/trainer.py:58 - INFO ] Start training from epoch: 46, iter: 1
+20-01-03 19:27:55 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:46, iter:100, lr:1.000e-05, loss:3892.162>
+20-01-03 19:29:17 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:46, iter:200, lr:1.000e-05, loss:3897.620>
+20-01-03 19:30:40 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:46, iter:300, lr:1.000e-05, loss:3910.106>
+20-01-03 19:32:02 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:46, iter:400, lr:1.000e-05, loss:3931.924>
+20-01-03 19:33:28 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:46, iter:500, lr:1.000e-05, loss:3948.038>
+20-01-03 19:33:29 [/home/likai/Desktop/DPCL/trainer/trainer.py:88 - INFO ] <epoch:46, iter:500, lr:1.000e-05, loss:3948.038, Total time:6.987 min> 
+20-01-03 19:33:29 [/home/likai/Desktop/DPCL/trainer/trainer.py:92 - INFO ] Start Validation from epoch: 46, iter: 1
+20-01-03 19:34:09 [/home/likai/Desktop/DPCL/trainer/trainer.py:110 - INFO ] <epoch:46, iter:100, lr:1.000e-05, loss:5184.924>
+20-01-03 19:34:18 [/home/likai/Desktop/DPCL/trainer/trainer.py:116 - INFO ] <epoch:46, iter:125, lr:1.000e-05, loss:5167.763, Total time:0.825 min> 
+20-01-03 19:34:37 [/home/likai/Desktop/DPCL/trainer/trainer.py:145 - INFO ] Epoch: 46, Now Best Loss Change: 5167.7633
+20-01-03 19:34:37 [/home/likai/Desktop/DPCL/trainer/trainer.py:58 - INFO ] Start training from epoch: 47, iter: 1
+20-01-03 19:36:03 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:47, iter:100, lr:1.000e-05, loss:3878.659>
+20-01-03 19:37:25 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:47, iter:200, lr:1.000e-05, loss:3871.686>
+20-01-03 19:38:49 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:47, iter:300, lr:1.000e-05, loss:3893.181>
+20-01-03 19:40:12 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:47, iter:400, lr:1.000e-05, loss:3906.867>
+20-01-03 19:41:35 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:47, iter:500, lr:1.000e-05, loss:3912.487>
+20-01-03 19:41:35 [/home/likai/Desktop/DPCL/trainer/trainer.py:88 - INFO ] <epoch:47, iter:500, lr:1.000e-05, loss:3912.487, Total time:6.967 min> 
+20-01-03 19:41:35 [/home/likai/Desktop/DPCL/trainer/trainer.py:92 - INFO ] Start Validation from epoch: 47, iter: 1
+20-01-03 19:42:16 [/home/likai/Desktop/DPCL/trainer/trainer.py:110 - INFO ] <epoch:47, iter:100, lr:1.000e-05, loss:5167.166>
+20-01-03 19:42:25 [/home/likai/Desktop/DPCL/trainer/trainer.py:116 - INFO ] <epoch:47, iter:125, lr:1.000e-05, loss:5173.985, Total time:0.831 min> 
+20-01-03 19:42:25 [/home/likai/Desktop/DPCL/trainer/trainer.py:140 - INFO ] No improvement, Best Loss: 5167.7633
+20-01-03 19:42:25 [/home/likai/Desktop/DPCL/trainer/trainer.py:58 - INFO ] Start training from epoch: 48, iter: 1
+20-01-03 19:43:50 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:48, iter:100, lr:1.000e-05, loss:3894.718>
+20-01-03 19:45:14 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:48, iter:200, lr:1.000e-05, loss:3868.780>
+20-01-03 19:46:39 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:48, iter:300, lr:1.000e-05, loss:3876.352>
+20-01-03 19:48:01 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:48, iter:400, lr:1.000e-05, loss:3889.719>
+20-01-03 19:49:23 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:48, iter:500, lr:1.000e-05, loss:3887.834>
+20-01-03 19:49:24 [/home/likai/Desktop/DPCL/trainer/trainer.py:88 - INFO ] <epoch:48, iter:500, lr:1.000e-05, loss:3887.834, Total time:6.970 min> 
+20-01-03 19:49:24 [/home/likai/Desktop/DPCL/trainer/trainer.py:92 - INFO ] Start Validation from epoch: 48, iter: 1
+20-01-03 19:50:04 [/home/likai/Desktop/DPCL/trainer/trainer.py:110 - INFO ] <epoch:48, iter:100, lr:1.000e-05, loss:5161.838>
+20-01-03 19:50:13 [/home/likai/Desktop/DPCL/trainer/trainer.py:116 - INFO ] <epoch:48, iter:125, lr:1.000e-05, loss:5129.430, Total time:0.827 min> 
+20-01-03 19:50:32 [/home/likai/Desktop/DPCL/trainer/trainer.py:145 - INFO ] Epoch: 48, Now Best Loss Change: 5129.4303
+20-01-03 19:50:32 [/home/likai/Desktop/DPCL/trainer/trainer.py:58 - INFO ] Start training from epoch: 49, iter: 1
+20-01-03 19:51:56 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:49, iter:100, lr:1.000e-05, loss:3844.868>
+20-01-03 19:53:19 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:49, iter:200, lr:1.000e-05, loss:3824.800>
+20-01-03 19:54:43 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:49, iter:300, lr:1.000e-05, loss:3850.997>
+20-01-03 19:56:06 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:49, iter:400, lr:1.000e-05, loss:3855.725>
+20-01-03 19:57:29 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:49, iter:500, lr:1.000e-05, loss:3854.510>
+20-01-03 19:57:29 [/home/likai/Desktop/DPCL/trainer/trainer.py:88 - INFO ] <epoch:49, iter:500, lr:1.000e-05, loss:3854.510, Total time:6.941 min> 
+20-01-03 19:57:29 [/home/likai/Desktop/DPCL/trainer/trainer.py:92 - INFO ] Start Validation from epoch: 49, iter: 1
+20-01-03 19:58:08 [/home/likai/Desktop/DPCL/trainer/trainer.py:110 - INFO ] <epoch:49, iter:100, lr:1.000e-05, loss:5125.627>
+20-01-03 19:58:18 [/home/likai/Desktop/DPCL/trainer/trainer.py:116 - INFO ] <epoch:49, iter:125, lr:1.000e-05, loss:5135.474, Total time:0.819 min> 
+20-01-03 19:58:18 [/home/likai/Desktop/DPCL/trainer/trainer.py:140 - INFO ] No improvement, Best Loss: 5129.4303
+20-01-03 19:58:18 [/home/likai/Desktop/DPCL/trainer/trainer.py:58 - INFO ] Start training from epoch: 50, iter: 1
+20-01-03 19:59:42 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:50, iter:100, lr:1.000e-05, loss:3841.501>
+20-01-03 20:01:05 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:50, iter:200, lr:1.000e-05, loss:3835.453>
+20-01-03 20:02:28 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:50, iter:300, lr:1.000e-05, loss:3828.322>
+20-01-03 20:03:52 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:50, iter:400, lr:1.000e-05, loss:3826.340>
+20-01-03 20:05:15 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:50, iter:500, lr:1.000e-05, loss:3832.340>
+20-01-03 20:05:15 [/home/likai/Desktop/DPCL/trainer/trainer.py:88 - INFO ] <epoch:50, iter:500, lr:1.000e-05, loss:3832.340, Total time:6.955 min> 
+20-01-03 20:05:15 [/home/likai/Desktop/DPCL/trainer/trainer.py:92 - INFO ] Start Validation from epoch: 50, iter: 1
+20-01-03 20:05:55 [/home/likai/Desktop/DPCL/trainer/trainer.py:110 - INFO ] <epoch:50, iter:100, lr:1.000e-05, loss:5138.098>
+20-01-03 20:06:04 [/home/likai/Desktop/DPCL/trainer/trainer.py:116 - INFO ] <epoch:50, iter:125, lr:1.000e-05, loss:5101.349, Total time:0.817 min> 
+20-01-03 20:06:29 [/home/likai/Desktop/DPCL/trainer/trainer.py:145 - INFO ] Epoch: 50, Now Best Loss Change: 5101.3490
+20-01-03 20:06:29 [/home/likai/Desktop/DPCL/trainer/trainer.py:58 - INFO ] Start training from epoch: 51, iter: 1
+20-01-03 20:07:53 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:51, iter:100, lr:1.000e-05, loss:3791.612>
+20-01-03 20:09:16 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:51, iter:200, lr:1.000e-05, loss:3808.469>
+20-01-03 20:10:37 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:51, iter:300, lr:1.000e-05, loss:3796.755>
+20-01-03 20:12:01 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:51, iter:400, lr:1.000e-05, loss:3796.273>
+20-01-03 20:13:24 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:51, iter:500, lr:1.000e-05, loss:3796.606>
+20-01-03 20:13:24 [/home/likai/Desktop/DPCL/trainer/trainer.py:88 - INFO ] <epoch:51, iter:500, lr:1.000e-05, loss:3796.606, Total time:6.930 min> 
+20-01-03 20:13:24 [/home/likai/Desktop/DPCL/trainer/trainer.py:92 - INFO ] Start Validation from epoch: 51, iter: 1
+20-01-03 20:14:04 [/home/likai/Desktop/DPCL/trainer/trainer.py:110 - INFO ] <epoch:51, iter:100, lr:1.000e-05, loss:5139.496>
+20-01-03 20:14:13 [/home/likai/Desktop/DPCL/trainer/trainer.py:116 - INFO ] <epoch:51, iter:125, lr:1.000e-05, loss:5128.263, Total time:0.817 min> 
+20-01-03 20:14:13 [/home/likai/Desktop/DPCL/trainer/trainer.py:140 - INFO ] No improvement, Best Loss: 5101.3490
+20-01-03 20:14:13 [/home/likai/Desktop/DPCL/trainer/trainer.py:58 - INFO ] Start training from epoch: 52, iter: 1
+20-01-03 20:15:39 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:52, iter:100, lr:1.000e-05, loss:3796.876>
+20-01-03 20:17:03 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:52, iter:200, lr:1.000e-05, loss:3786.591>
+20-01-03 20:18:26 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:52, iter:300, lr:1.000e-05, loss:3771.003>
+20-01-03 20:19:50 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:52, iter:400, lr:1.000e-05, loss:3775.133>
+20-01-03 20:21:13 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:52, iter:500, lr:1.000e-05, loss:3778.912>
+20-01-03 20:21:14 [/home/likai/Desktop/DPCL/trainer/trainer.py:88 - INFO ] <epoch:52, iter:500, lr:1.000e-05, loss:3778.912, Total time:7.002 min> 
+20-01-03 20:21:14 [/home/likai/Desktop/DPCL/trainer/trainer.py:92 - INFO ] Start Validation from epoch: 52, iter: 1
+20-01-03 20:21:53 [/home/likai/Desktop/DPCL/trainer/trainer.py:110 - INFO ] <epoch:52, iter:100, lr:1.000e-05, loss:5095.865>
+20-01-03 20:22:03 [/home/likai/Desktop/DPCL/trainer/trainer.py:116 - INFO ] <epoch:52, iter:125, lr:1.000e-05, loss:5117.456, Total time:0.822 min> 
+20-01-03 20:22:03 [/home/likai/Desktop/DPCL/trainer/trainer.py:140 - INFO ] No improvement, Best Loss: 5101.3490
+20-01-03 20:22:03 [/home/likai/Desktop/DPCL/trainer/trainer.py:58 - INFO ] Start training from epoch: 53, iter: 1
+20-01-03 20:23:28 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:53, iter:100, lr:1.000e-05, loss:3765.033>
+20-01-03 20:24:50 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:53, iter:200, lr:1.000e-05, loss:3747.127>
+20-01-03 20:26:14 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:53, iter:300, lr:1.000e-05, loss:3747.271>
+20-01-03 20:27:35 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:53, iter:400, lr:1.000e-05, loss:3735.423>
+20-01-03 20:28:59 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:53, iter:500, lr:1.000e-05, loss:3743.677>
+20-01-03 20:28:59 [/home/likai/Desktop/DPCL/trainer/trainer.py:88 - INFO ] <epoch:53, iter:500, lr:1.000e-05, loss:3743.677, Total time:6.934 min> 
+20-01-03 20:28:59 [/home/likai/Desktop/DPCL/trainer/trainer.py:92 - INFO ] Start Validation from epoch: 53, iter: 1
+20-01-03 20:29:39 [/home/likai/Desktop/DPCL/trainer/trainer.py:110 - INFO ] <epoch:53, iter:100, lr:1.000e-05, loss:5097.067>
+20-01-03 20:29:48 [/home/likai/Desktop/DPCL/trainer/trainer.py:116 - INFO ] <epoch:53, iter:125, lr:1.000e-05, loss:5070.327, Total time:0.823 min> 
+20-01-03 20:30:10 [/home/likai/Desktop/DPCL/trainer/trainer.py:145 - INFO ] Epoch: 53, Now Best Loss Change: 5070.3270
+20-01-03 20:30:10 [/home/likai/Desktop/DPCL/trainer/trainer.py:58 - INFO ] Start training from epoch: 54, iter: 1
+20-01-03 20:31:36 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:54, iter:100, lr:1.000e-05, loss:3695.965>
+20-01-03 20:32:59 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:54, iter:200, lr:1.000e-05, loss:3707.843>
+20-01-03 20:34:21 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:54, iter:300, lr:1.000e-05, loss:3700.390>
+20-01-03 20:35:44 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:54, iter:400, lr:1.000e-05, loss:3709.165>
+20-01-03 20:37:07 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:54, iter:500, lr:1.000e-05, loss:3719.794>
+20-01-03 20:37:07 [/home/likai/Desktop/DPCL/trainer/trainer.py:88 - INFO ] <epoch:54, iter:500, lr:1.000e-05, loss:3719.794, Total time:6.965 min> 
+20-01-03 20:37:07 [/home/likai/Desktop/DPCL/trainer/trainer.py:92 - INFO ] Start Validation from epoch: 54, iter: 1
+20-01-03 20:37:47 [/home/likai/Desktop/DPCL/trainer/trainer.py:110 - INFO ] <epoch:54, iter:100, lr:1.000e-05, loss:5111.934>
+20-01-03 20:37:57 [/home/likai/Desktop/DPCL/trainer/trainer.py:116 - INFO ] <epoch:54, iter:125, lr:1.000e-05, loss:5108.241, Total time:0.828 min> 
+20-01-03 20:37:57 [/home/likai/Desktop/DPCL/trainer/trainer.py:140 - INFO ] No improvement, Best Loss: 5070.3270
+20-01-03 20:37:57 [/home/likai/Desktop/DPCL/trainer/trainer.py:58 - INFO ] Start training from epoch: 55, iter: 1
+20-01-03 20:39:23 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:55, iter:100, lr:1.000e-05, loss:3647.640>
+20-01-03 20:40:45 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:55, iter:200, lr:1.000e-05, loss:3675.758>
+20-01-03 20:42:09 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:55, iter:300, lr:1.000e-05, loss:3679.094>
+20-01-03 20:43:32 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:55, iter:400, lr:1.000e-05, loss:3683.130>
+20-01-03 20:44:55 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:55, iter:500, lr:1.000e-05, loss:3694.363>
+20-01-03 20:44:55 [/home/likai/Desktop/DPCL/trainer/trainer.py:88 - INFO ] <epoch:55, iter:500, lr:1.000e-05, loss:3694.363, Total time:6.966 min> 
+20-01-03 20:44:55 [/home/likai/Desktop/DPCL/trainer/trainer.py:92 - INFO ] Start Validation from epoch: 55, iter: 1
+20-01-03 20:45:35 [/home/likai/Desktop/DPCL/trainer/trainer.py:110 - INFO ] <epoch:55, iter:100, lr:1.000e-05, loss:5101.820>
+20-01-03 20:45:44 [/home/likai/Desktop/DPCL/trainer/trainer.py:116 - INFO ] <epoch:55, iter:125, lr:1.000e-05, loss:5084.718, Total time:0.816 min> 
+20-01-03 20:45:44 [/home/likai/Desktop/DPCL/trainer/trainer.py:140 - INFO ] No improvement, Best Loss: 5070.3270
+20-01-03 20:45:44 [/home/likai/Desktop/DPCL/trainer/trainer.py:58 - INFO ] Start training from epoch: 56, iter: 1
+20-01-03 20:47:10 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:56, iter:100, lr:1.000e-05, loss:3684.849>
+20-01-03 20:48:32 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:56, iter:200, lr:1.000e-05, loss:3680.816>
+20-01-03 20:49:56 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:56, iter:300, lr:1.000e-05, loss:3663.501>
+20-01-03 20:51:20 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:56, iter:400, lr:1.000e-05, loss:3679.415>
+20-01-03 20:52:43 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:56, iter:500, lr:1.000e-05, loss:3678.639>
+20-01-03 20:52:43 [/home/likai/Desktop/DPCL/trainer/trainer.py:88 - INFO ] <epoch:56, iter:500, lr:1.000e-05, loss:3678.639, Total time:6.985 min> 
+20-01-03 20:52:43 [/home/likai/Desktop/DPCL/trainer/trainer.py:92 - INFO ] Start Validation from epoch: 56, iter: 1
+20-01-03 20:53:23 [/home/likai/Desktop/DPCL/trainer/trainer.py:110 - INFO ] <epoch:56, iter:100, lr:1.000e-05, loss:5045.648>
+20-01-03 20:53:33 [/home/likai/Desktop/DPCL/trainer/trainer.py:116 - INFO ] <epoch:56, iter:125, lr:1.000e-05, loss:5073.290, Total time:0.834 min> 
+20-01-03 20:53:33 [/home/likai/Desktop/DPCL/trainer/trainer.py:140 - INFO ] No improvement, Best Loss: 5070.3270
+20-01-03 20:53:33 [/home/likai/Desktop/DPCL/trainer/trainer.py:58 - INFO ] Start training from epoch: 57, iter: 1
+20-01-03 20:54:58 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:57, iter:100, lr:1.000e-05, loss:3646.267>
+20-01-03 20:56:21 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:57, iter:200, lr:1.000e-05, loss:3639.488>
+20-01-03 20:57:45 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:57, iter:300, lr:1.000e-05, loss:3638.547>
+20-01-03 20:59:08 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:57, iter:400, lr:1.000e-05, loss:3639.205>
+20-01-03 21:00:31 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:57, iter:500, lr:1.000e-05, loss:3644.456>
+20-01-03 21:00:31 [/home/likai/Desktop/DPCL/trainer/trainer.py:88 - INFO ] <epoch:57, iter:500, lr:1.000e-05, loss:3644.456, Total time:6.959 min> 
+20-01-03 21:00:31 [/home/likai/Desktop/DPCL/trainer/trainer.py:92 - INFO ] Start Validation from epoch: 57, iter: 1
+20-01-03 21:01:11 [/home/likai/Desktop/DPCL/trainer/trainer.py:110 - INFO ] <epoch:57, iter:100, lr:1.000e-05, loss:5060.324>
+20-01-03 21:01:21 [/home/likai/Desktop/DPCL/trainer/trainer.py:116 - INFO ] <epoch:57, iter:125, lr:1.000e-05, loss:5057.054, Total time:0.835 min> 
+20-01-03 21:01:41 [/home/likai/Desktop/DPCL/trainer/trainer.py:145 - INFO ] Epoch: 57, Now Best Loss Change: 5057.0543
+20-01-03 21:01:41 [/home/likai/Desktop/DPCL/trainer/trainer.py:58 - INFO ] Start training from epoch: 58, iter: 1
+20-01-03 21:03:06 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:58, iter:100, lr:1.000e-05, loss:3578.787>
+20-01-03 21:04:29 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:58, iter:200, lr:1.000e-05, loss:3603.841>
+20-01-03 21:05:52 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:58, iter:300, lr:1.000e-05, loss:3606.234>
+20-01-03 21:07:16 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:58, iter:400, lr:1.000e-05, loss:3623.637>
+20-01-03 21:08:39 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:58, iter:500, lr:1.000e-05, loss:3625.380>
+20-01-03 21:08:39 [/home/likai/Desktop/DPCL/trainer/trainer.py:88 - INFO ] <epoch:58, iter:500, lr:1.000e-05, loss:3625.380, Total time:6.970 min> 
+20-01-03 21:08:39 [/home/likai/Desktop/DPCL/trainer/trainer.py:92 - INFO ] Start Validation from epoch: 58, iter: 1
+20-01-03 21:09:18 [/home/likai/Desktop/DPCL/trainer/trainer.py:110 - INFO ] <epoch:58, iter:100, lr:1.000e-05, loss:5096.127>
+20-01-03 21:09:28 [/home/likai/Desktop/DPCL/trainer/trainer.py:116 - INFO ] <epoch:58, iter:125, lr:1.000e-05, loss:5067.740, Total time:0.819 min> 
+20-01-03 21:09:28 [/home/likai/Desktop/DPCL/trainer/trainer.py:140 - INFO ] No improvement, Best Loss: 5057.0543
+20-01-03 21:09:28 [/home/likai/Desktop/DPCL/trainer/trainer.py:58 - INFO ] Start training from epoch: 59, iter: 1
+20-01-03 21:10:55 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:59, iter:100, lr:1.000e-05, loss:3596.312>
+20-01-03 21:12:18 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:59, iter:200, lr:1.000e-05, loss:3612.034>
+20-01-03 21:13:43 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:59, iter:300, lr:1.000e-05, loss:3609.989>
+20-01-03 21:15:07 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:59, iter:400, lr:1.000e-05, loss:3608.820>
+20-01-03 21:16:29 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:59, iter:500, lr:1.000e-05, loss:3612.489>
+20-01-03 21:16:29 [/home/likai/Desktop/DPCL/trainer/trainer.py:88 - INFO ] <epoch:59, iter:500, lr:1.000e-05, loss:3612.489, Total time:7.019 min> 
+20-01-03 21:16:29 [/home/likai/Desktop/DPCL/trainer/trainer.py:92 - INFO ] Start Validation from epoch: 59, iter: 1
+20-01-03 21:17:09 [/home/likai/Desktop/DPCL/trainer/trainer.py:110 - INFO ] <epoch:59, iter:100, lr:1.000e-05, loss:5086.845>
+20-01-03 21:17:18 [/home/likai/Desktop/DPCL/trainer/trainer.py:116 - INFO ] <epoch:59, iter:125, lr:1.000e-05, loss:5078.408, Total time:0.824 min> 
+20-01-03 21:17:18 [/home/likai/Desktop/DPCL/trainer/trainer.py:140 - INFO ] No improvement, Best Loss: 5057.0543
+20-01-03 21:17:18 [/home/likai/Desktop/DPCL/trainer/trainer.py:58 - INFO ] Start training from epoch: 60, iter: 1
+20-01-03 21:18:44 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:60, iter:100, lr:1.000e-05, loss:3567.775>
+20-01-03 21:20:07 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:60, iter:200, lr:1.000e-05, loss:3568.585>
+20-01-03 21:21:30 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:60, iter:300, lr:1.000e-05, loss:3559.840>
+20-01-03 21:22:52 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:60, iter:400, lr:1.000e-05, loss:3577.070>
+20-01-03 21:24:14 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:60, iter:500, lr:1.000e-05, loss:3582.666>
+20-01-03 21:24:14 [/home/likai/Desktop/DPCL/trainer/trainer.py:88 - INFO ] <epoch:60, iter:500, lr:1.000e-05, loss:3582.666, Total time:6.933 min> 
+20-01-03 21:24:14 [/home/likai/Desktop/DPCL/trainer/trainer.py:92 - INFO ] Start Validation from epoch: 60, iter: 1
+20-01-03 21:24:54 [/home/likai/Desktop/DPCL/trainer/trainer.py:110 - INFO ] <epoch:60, iter:100, lr:1.000e-05, loss:5065.952>
+20-01-03 21:25:03 [/home/likai/Desktop/DPCL/trainer/trainer.py:116 - INFO ] <epoch:60, iter:125, lr:1.000e-05, loss:5061.932, Total time:0.815 min> 
+20-01-03 21:25:03 [/home/likai/Desktop/DPCL/trainer/trainer.py:140 - INFO ] No improvement, Best Loss: 5057.0543
+20-01-03 21:25:03 [/home/likai/Desktop/DPCL/trainer/trainer.py:58 - INFO ] Start training from epoch: 61, iter: 1
+20-01-03 21:26:28 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:61, iter:100, lr:1.000e-05, loss:3534.266>
+20-01-03 21:27:52 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:61, iter:200, lr:1.000e-05, loss:3555.468>
+20-01-03 21:29:15 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:61, iter:300, lr:1.000e-05, loss:3560.609>
+20-01-03 21:30:37 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:61, iter:400, lr:1.000e-05, loss:3558.550>
+20-01-03 21:32:00 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:61, iter:500, lr:1.000e-05, loss:3565.898>
+20-01-03 21:32:00 [/home/likai/Desktop/DPCL/trainer/trainer.py:88 - INFO ] <epoch:61, iter:500, lr:1.000e-05, loss:3565.898, Total time:6.952 min> 
+20-01-03 21:32:00 [/home/likai/Desktop/DPCL/trainer/trainer.py:92 - INFO ] Start Validation from epoch: 61, iter: 1
+20-01-03 21:32:40 [/home/likai/Desktop/DPCL/trainer/trainer.py:110 - INFO ] <epoch:61, iter:100, lr:1.000e-05, loss:5073.105>
+20-01-03 21:32:50 [/home/likai/Desktop/DPCL/trainer/trainer.py:116 - INFO ] <epoch:61, iter:125, lr:1.000e-05, loss:5075.097, Total time:0.818 min> 
+20-01-03 21:32:50 [/home/likai/Desktop/DPCL/trainer/trainer.py:140 - INFO ] No improvement, Best Loss: 5057.0543
+20-01-03 21:32:50 [/home/likai/Desktop/DPCL/trainer/trainer.py:58 - INFO ] Start training from epoch: 62, iter: 1
+20-01-03 21:34:14 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:62, iter:100, lr:1.000e-05, loss:3486.244>
+20-01-03 21:35:37 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:62, iter:200, lr:1.000e-05, loss:3510.461>
+20-01-03 21:37:00 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:62, iter:300, lr:1.000e-05, loss:3528.071>
+20-01-03 21:38:23 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:62, iter:400, lr:1.000e-05, loss:3537.692>
+20-01-03 21:39:46 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:62, iter:500, lr:1.000e-05, loss:3541.638>
+20-01-03 21:39:46 [/home/likai/Desktop/DPCL/trainer/trainer.py:88 - INFO ] <epoch:62, iter:500, lr:1.000e-05, loss:3541.638, Total time:6.940 min> 
+20-01-03 21:39:46 [/home/likai/Desktop/DPCL/trainer/trainer.py:92 - INFO ] Start Validation from epoch: 62, iter: 1
+20-01-03 21:40:26 [/home/likai/Desktop/DPCL/trainer/trainer.py:110 - INFO ] <epoch:62, iter:100, lr:1.000e-05, loss:5000.920>
+20-01-03 21:40:36 [/home/likai/Desktop/DPCL/trainer/trainer.py:116 - INFO ] <epoch:62, iter:125, lr:1.000e-05, loss:5035.785, Total time:0.826 min> 
+20-01-03 21:40:55 [/home/likai/Desktop/DPCL/trainer/trainer.py:145 - INFO ] Epoch: 62, Now Best Loss Change: 5035.7853
+20-01-03 21:40:55 [/home/likai/Desktop/DPCL/trainer/trainer.py:58 - INFO ] Start training from epoch: 63, iter: 1
+20-01-03 21:42:20 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:63, iter:100, lr:1.000e-05, loss:3498.615>
+20-01-03 21:43:43 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:63, iter:200, lr:1.000e-05, loss:3513.293>
+20-01-03 21:45:06 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:63, iter:300, lr:1.000e-05, loss:3521.419>
+20-01-03 21:46:29 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:63, iter:400, lr:1.000e-05, loss:3517.508>
+20-01-03 21:47:52 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:63, iter:500, lr:1.000e-05, loss:3516.412>
+20-01-03 21:47:52 [/home/likai/Desktop/DPCL/trainer/trainer.py:88 - INFO ] <epoch:63, iter:500, lr:1.000e-05, loss:3516.412, Total time:6.957 min> 
+20-01-03 21:47:52 [/home/likai/Desktop/DPCL/trainer/trainer.py:92 - INFO ] Start Validation from epoch: 63, iter: 1
+20-01-03 21:48:33 [/home/likai/Desktop/DPCL/trainer/trainer.py:110 - INFO ] <epoch:63, iter:100, lr:1.000e-05, loss:5026.737>
+20-01-03 21:48:42 [/home/likai/Desktop/DPCL/trainer/trainer.py:116 - INFO ] <epoch:63, iter:125, lr:1.000e-05, loss:5027.998, Total time:0.824 min> 
+20-01-03 21:49:06 [/home/likai/Desktop/DPCL/trainer/trainer.py:145 - INFO ] Epoch: 63, Now Best Loss Change: 5027.9979
+20-01-03 21:49:06 [/home/likai/Desktop/DPCL/trainer/trainer.py:58 - INFO ] Start training from epoch: 64, iter: 1
+20-01-03 21:50:30 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:64, iter:100, lr:1.000e-05, loss:3496.080>
+20-01-03 21:51:52 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:64, iter:200, lr:1.000e-05, loss:3477.365>
+20-01-03 21:53:16 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:64, iter:300, lr:1.000e-05, loss:3477.226>
+20-01-03 21:54:39 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:64, iter:400, lr:1.000e-05, loss:3491.345>
+20-01-03 21:56:02 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:64, iter:500, lr:1.000e-05, loss:3494.316>
+20-01-03 21:56:02 [/home/likai/Desktop/DPCL/trainer/trainer.py:88 - INFO ] <epoch:64, iter:500, lr:1.000e-05, loss:3494.316, Total time:6.930 min> 
+20-01-03 21:56:02 [/home/likai/Desktop/DPCL/trainer/trainer.py:92 - INFO ] Start Validation from epoch: 64, iter: 1
+20-01-03 21:56:42 [/home/likai/Desktop/DPCL/trainer/trainer.py:110 - INFO ] <epoch:64, iter:100, lr:1.000e-05, loss:5016.869>
+20-01-03 21:56:52 [/home/likai/Desktop/DPCL/trainer/trainer.py:116 - INFO ] <epoch:64, iter:125, lr:1.000e-05, loss:5048.828, Total time:0.827 min> 
+20-01-03 21:56:52 [/home/likai/Desktop/DPCL/trainer/trainer.py:140 - INFO ] No improvement, Best Loss: 5027.9979
+20-01-03 21:56:52 [/home/likai/Desktop/DPCL/trainer/trainer.py:58 - INFO ] Start training from epoch: 65, iter: 1
+20-01-03 21:58:15 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:65, iter:100, lr:1.000e-05, loss:3444.187>
+20-01-03 21:59:40 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:65, iter:200, lr:1.000e-05, loss:3450.438>
+20-01-03 22:01:03 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:65, iter:300, lr:1.000e-05, loss:3472.223>
+20-01-03 22:02:26 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:65, iter:400, lr:1.000e-05, loss:3463.784>
+20-01-03 22:03:50 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:65, iter:500, lr:1.000e-05, loss:3471.997>
+20-01-03 22:03:50 [/home/likai/Desktop/DPCL/trainer/trainer.py:88 - INFO ] <epoch:65, iter:500, lr:1.000e-05, loss:3471.997, Total time:6.973 min> 
+20-01-03 22:03:50 [/home/likai/Desktop/DPCL/trainer/trainer.py:92 - INFO ] Start Validation from epoch: 65, iter: 1
+20-01-03 22:04:29 [/home/likai/Desktop/DPCL/trainer/trainer.py:110 - INFO ] <epoch:65, iter:100, lr:1.000e-05, loss:5028.220>
+20-01-03 22:04:39 [/home/likai/Desktop/DPCL/trainer/trainer.py:116 - INFO ] <epoch:65, iter:125, lr:1.000e-05, loss:5054.484, Total time:0.818 min> 
+20-01-03 22:04:39 [/home/likai/Desktop/DPCL/trainer/trainer.py:140 - INFO ] No improvement, Best Loss: 5027.9979
+20-01-03 22:04:39 [/home/likai/Desktop/DPCL/trainer/trainer.py:58 - INFO ] Start training from epoch: 66, iter: 1
+20-01-03 22:06:04 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:66, iter:100, lr:1.000e-05, loss:3436.927>
+20-01-03 22:07:27 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:66, iter:200, lr:1.000e-05, loss:3442.093>
+20-01-03 22:08:50 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:66, iter:300, lr:1.000e-05, loss:3456.040>
+20-01-03 22:10:13 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:66, iter:400, lr:1.000e-05, loss:3451.149>
+20-01-03 22:11:35 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:66, iter:500, lr:1.000e-05, loss:3454.029>
+20-01-03 22:11:35 [/home/likai/Desktop/DPCL/trainer/trainer.py:88 - INFO ] <epoch:66, iter:500, lr:1.000e-05, loss:3454.029, Total time:6.936 min> 
+20-01-03 22:11:35 [/home/likai/Desktop/DPCL/trainer/trainer.py:92 - INFO ] Start Validation from epoch: 66, iter: 1
+20-01-03 22:12:15 [/home/likai/Desktop/DPCL/trainer/trainer.py:110 - INFO ] <epoch:66, iter:100, lr:1.000e-05, loss:4975.632>
+20-01-03 22:12:25 [/home/likai/Desktop/DPCL/trainer/trainer.py:116 - INFO ] <epoch:66, iter:125, lr:1.000e-05, loss:4994.316, Total time:0.823 min> 
+20-01-03 22:12:44 [/home/likai/Desktop/DPCL/trainer/trainer.py:145 - INFO ] Epoch: 66, Now Best Loss Change: 4994.3160
+20-01-03 22:12:44 [/home/likai/Desktop/DPCL/trainer/trainer.py:58 - INFO ] Start training from epoch: 67, iter: 1
+20-01-03 22:14:10 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:67, iter:100, lr:1.000e-05, loss:3417.497>
+20-01-03 22:15:33 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:67, iter:200, lr:1.000e-05, loss:3410.186>
+20-01-03 22:16:56 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:67, iter:300, lr:1.000e-05, loss:3429.473>
+20-01-03 22:18:20 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:67, iter:400, lr:1.000e-05, loss:3442.952>
+20-01-03 22:19:42 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:67, iter:500, lr:1.000e-05, loss:3434.974>
+20-01-03 22:19:42 [/home/likai/Desktop/DPCL/trainer/trainer.py:88 - INFO ] <epoch:67, iter:500, lr:1.000e-05, loss:3434.974, Total time:6.966 min> 
+20-01-03 22:19:42 [/home/likai/Desktop/DPCL/trainer/trainer.py:92 - INFO ] Start Validation from epoch: 67, iter: 1
+20-01-03 22:20:22 [/home/likai/Desktop/DPCL/trainer/trainer.py:110 - INFO ] <epoch:67, iter:100, lr:1.000e-05, loss:5019.618>
+20-01-03 22:20:31 [/home/likai/Desktop/DPCL/trainer/trainer.py:116 - INFO ] <epoch:67, iter:125, lr:1.000e-05, loss:5025.495, Total time:0.824 min> 
+20-01-03 22:20:31 [/home/likai/Desktop/DPCL/trainer/trainer.py:140 - INFO ] No improvement, Best Loss: 4994.3160
+20-01-03 22:20:31 [/home/likai/Desktop/DPCL/trainer/trainer.py:58 - INFO ] Start training from epoch: 68, iter: 1
+20-01-03 22:21:57 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:68, iter:100, lr:1.000e-05, loss:3457.850>
+20-01-03 22:23:20 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:68, iter:200, lr:1.000e-05, loss:3435.224>
+20-01-03 22:24:43 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:68, iter:300, lr:1.000e-05, loss:3420.585>
+20-01-03 22:26:06 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:68, iter:400, lr:1.000e-05, loss:3422.469>
+20-01-03 22:27:29 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:68, iter:500, lr:1.000e-05, loss:3422.797>
+20-01-03 22:27:29 [/home/likai/Desktop/DPCL/trainer/trainer.py:88 - INFO ] <epoch:68, iter:500, lr:1.000e-05, loss:3422.797, Total time:6.964 min> 
+20-01-03 22:27:29 [/home/likai/Desktop/DPCL/trainer/trainer.py:92 - INFO ] Start Validation from epoch: 68, iter: 1
+20-01-03 22:28:09 [/home/likai/Desktop/DPCL/trainer/trainer.py:110 - INFO ] <epoch:68, iter:100, lr:1.000e-05, loss:5051.912>
+20-01-03 22:28:18 [/home/likai/Desktop/DPCL/trainer/trainer.py:116 - INFO ] <epoch:68, iter:125, lr:1.000e-05, loss:5006.729, Total time:0.820 min> 
+20-01-03 22:28:18 [/home/likai/Desktop/DPCL/trainer/trainer.py:140 - INFO ] No improvement, Best Loss: 4994.3160
+20-01-03 22:28:18 [/home/likai/Desktop/DPCL/trainer/trainer.py:58 - INFO ] Start training from epoch: 69, iter: 1
+20-01-03 22:29:43 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:69, iter:100, lr:1.000e-05, loss:3372.948>
+20-01-03 22:31:05 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:69, iter:200, lr:1.000e-05, loss:3377.698>
+20-01-03 22:32:29 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:69, iter:300, lr:1.000e-05, loss:3387.352>
+20-01-03 22:33:52 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:69, iter:400, lr:1.000e-05, loss:3391.227>
+20-01-03 22:35:17 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:69, iter:500, lr:1.000e-05, loss:3395.551>
+20-01-03 22:35:17 [/home/likai/Desktop/DPCL/trainer/trainer.py:88 - INFO ] <epoch:69, iter:500, lr:1.000e-05, loss:3395.551, Total time:6.982 min> 
+20-01-03 22:35:17 [/home/likai/Desktop/DPCL/trainer/trainer.py:92 - INFO ] Start Validation from epoch: 69, iter: 1
+20-01-03 22:35:58 [/home/likai/Desktop/DPCL/trainer/trainer.py:110 - INFO ] <epoch:69, iter:100, lr:1.000e-05, loss:4978.781>
+20-01-03 22:36:07 [/home/likai/Desktop/DPCL/trainer/trainer.py:116 - INFO ] <epoch:69, iter:125, lr:1.000e-05, loss:5009.030, Total time:0.828 min> 
+20-01-03 22:36:07 [/home/likai/Desktop/DPCL/trainer/trainer.py:140 - INFO ] No improvement, Best Loss: 4994.3160
+20-01-03 22:36:07 [/home/likai/Desktop/DPCL/trainer/trainer.py:58 - INFO ] Start training from epoch: 70, iter: 1
+20-01-03 22:37:32 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:70, iter:100, lr:1.000e-05, loss:3389.153>
+20-01-03 22:38:56 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:70, iter:200, lr:1.000e-05, loss:3384.516>
+20-01-03 22:40:20 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:70, iter:300, lr:1.000e-05, loss:3381.915>
+20-01-03 22:41:42 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:70, iter:400, lr:1.000e-05, loss:3380.404>
+20-01-03 22:43:05 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:70, iter:500, lr:1.000e-05, loss:3383.508>
+20-01-03 22:43:05 [/home/likai/Desktop/DPCL/trainer/trainer.py:88 - INFO ] <epoch:70, iter:500, lr:1.000e-05, loss:3383.508, Total time:6.974 min> 
+20-01-03 22:43:05 [/home/likai/Desktop/DPCL/trainer/trainer.py:92 - INFO ] Start Validation from epoch: 70, iter: 1
+20-01-03 22:43:46 [/home/likai/Desktop/DPCL/trainer/trainer.py:110 - INFO ] <epoch:70, iter:100, lr:1.000e-05, loss:4996.884>
+20-01-03 22:43:55 [/home/likai/Desktop/DPCL/trainer/trainer.py:116 - INFO ] <epoch:70, iter:125, lr:1.000e-05, loss:5000.370, Total time:0.834 min> 
+20-01-03 22:43:55 [/home/likai/Desktop/DPCL/trainer/trainer.py:140 - INFO ] No improvement, Best Loss: 4994.3160
+20-01-03 22:43:55 [/home/likai/Desktop/DPCL/trainer/trainer.py:58 - INFO ] Start training from epoch: 71, iter: 1
+20-01-03 22:45:20 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:71, iter:100, lr:1.000e-05, loss:3360.952>
+20-01-03 22:46:43 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:71, iter:200, lr:1.000e-05, loss:3356.529>
+20-01-03 22:48:07 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:71, iter:300, lr:1.000e-05, loss:3360.973>
+20-01-03 22:49:29 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:71, iter:400, lr:1.000e-05, loss:3356.188>
+20-01-03 22:50:52 [/home/likai/Desktop/DPCL/trainer/trainer.py:82 - INFO ] <epoch:71, iter:500, lr:1.000e-05, loss:3363.029>
+20-01-03 22:50:52 [/home/likai/Desktop/DPCL/trainer/trainer.py:88 - INFO ] <epoch:71, iter:500, lr:1.000e-05, loss:3363.029, Total time:6.943 min> 
+20-01-03 22:50:52 [/home/likai/Desktop/DPCL/trainer/trainer.py:92 - INFO ] Start Validation from epoch: 71, iter: 1
+20-01-03 22:51:32 [/home/likai/Desktop/DPCL/trainer/trainer.py:110 - INFO ] <epoch:71, iter:100, lr:1.000e-05, loss:5019.068>
+20-01-03 22:51:41 [/home/likai/Desktop/DPCL/trainer/trainer.py:116 - INFO ] <epoch:71, iter:125, lr:1.000e-05, loss:5015.880, Total time:0.824 min> 
+20-01-03 22:51:41 [/home/likai/Desktop/DPCL/trainer/trainer.py:140 - INFO ] No improvement, Best Loss: 4994.3160
+20-01-03 22:51:41 [/home/likai/Desktop/DPCL/trainer/trainer.py:150 - INFO ] Stop training cause no impr for 5 epochs
+20-01-03 22:52:01 [/home/likai/Desktop/DPCL/trainer/trainer.py:154 - INFO ] Training for 71/100 epoches done!

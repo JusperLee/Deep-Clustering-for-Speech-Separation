@@ -27,10 +27,9 @@ def make_dataloader(opt):
         opt['datasets']['val']['dataroot_mix'], **opt['datasets']['audio_setting'])
     val_target_readers = [AudioData(opt['datasets']['val']['dataroot_targets'][0], **opt['datasets']['audio_setting']),
                           AudioData(opt['datasets']['val']['dataroot_targets'][1], **opt['datasets']['audio_setting'])]
-    val_dataset = Dataloader.dataset(train_mix_reader, train_target_readers)
+    val_dataset = Dataloader.dataset(val_mix_reader, val_target_readers)
     val_dataloader = Dataloader.dataloader(
-        train_dataset, **opt['datasets']['dataloader_setting'])
-
+        val_dataset, **opt['datasets']['dataloader_setting'])
     return train_dataloader, val_dataloader
 
 
@@ -64,6 +63,7 @@ def train():
     logger.info('Building the dataloader of Deep Clustering')
     train_dataloader, val_dataloader = make_dataloader(opt)
 
+    logger.info('Train Datasets Length: {}, Val Datasets Length: {}'.format(len(train_dataloader),len(val_dataloader)))
     logger.info('Building the Trainer of Deep Clustering')
     trainer = Trainer(train_dataloader, val_dataloader, dpcl,optimizer,opt)
     trainer.run()

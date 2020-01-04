@@ -29,7 +29,7 @@ class dataset(Dataset):
 
 
 class dataloader(object):
-    def __init__(self, dataset, batch_size=2, shuffle=True, num_workers=1, cmvn_file='../utils/cmvn.ark'):
+    def __init__(self, dataset, batch_size=40, shuffle=True, num_workers=16, cmvn_file='../cmvn.ark'):
         super(dataloader).__init__()
         self.dataload = DataLoader(
             dataset, batch_size=batch_size, num_workers=num_workers, shuffle=shuffle, collate_fn=self.collate)
@@ -67,9 +67,9 @@ class dataloader(object):
 
 if __name__ == "__main__":
     mix_reader = AudioData(
-        "/home/likai/data1/create_scp/cv_mix.scp", is_mag=True, is_log=True)
-    target_readers = [AudioData("/home/likai/data1/create_scp/cv_s1.scp", is_mag=True, is_log=True),
-                      AudioData("/home/likai/data1/create_scp/cv_s2.scp", is_mag=True, is_log=True)]
+        "/home/likai/Desktop/create_scp/tr_mix.scp", is_mag=True, is_log=True)
+    target_readers = [AudioData("/home/likai/Desktop/create_scp/tr_s1.scp", is_mag=True, is_log=True),
+                      AudioData("/home/likai/Desktop/create_scp/tr_s2.scp", is_mag=True, is_log=True)]
     dataset = dataset(mix_reader, target_readers)
     dataloader = dataloader(dataset)
     print(len(dataloader))
