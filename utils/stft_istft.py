@@ -34,6 +34,7 @@ class STFT(object):
         return stft_r
 
     def istft(self, stft_samp):
+        stft_samp = np.transpose(stft_samp)
         output = librosa.istft(stft_samp, hop_length=self.hop_length,
                                win_length=self.window_length, window=self.window,center=self.center)
         return output

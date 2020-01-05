@@ -71,14 +71,14 @@ def compute_non_silent(samp, threshold=40, is_linear=True):
        threshold: threshold(dB)
        is_linear: non-linear -> linear
     '''
+    # to linear first if needed
     if is_linear:
         samp = np.exp(samp)
-    samp_db = librosa.amplitude_to_db(np.abs(samp),ref=1.0)
-    max_mag = np.max(samp_db)
-    threshold = librosa.db_to_amplitude(max_mag-threshold)
-    #threshold = 10**((max_mag - threshold) / 20)
+    # to dB
+    spectra_db = 20 * np.log10(samp)
+    max_magnitude_db = np.max(spectra_db)
+    threshold = 10**((max_magnitude_db - threshold) / 20)
     non_silent = np.array(samp > threshold, dtype=np.float32)
-
     return non_silent
 
 def compute_cmvn(scp_file,save_file,**kwargs):
@@ -93,19 +93,22 @@ def compute_cmvn(scp_file,save_file,**kwargs):
             var:  [frequency-bins]
     '''
     wave_reader = AudioData(scp_file,**kwargs)
-    frequency_bins = wave_reader[wave_reader.wave_keys[0]][0]
-    all_wave = wave_reader[wave_reader.wave_keys[0]]
-    index = 0
-    for wave in tqdm(wave_reader):
-        if index != 0:
-            all_wave = np.row_stack((all_wave,wave))
-        index+=1
-    means = np.mean(all_wave,axis=0)
-    stds = np.std(all_wave,axis=0)
-    file_data = {'means':means,'stds':stds}
-    pickle.dump(file_data,open(save_file,'wb'))
-    print('means:',means)
-    print('stds:',stds)
+    tf_bin = int(kwargs['nfft']/2+1)
+    mean = np.zeros(tf_bin)
+    std = np.zeros(tf_bin)
+    num_frames = 0
+    for spectrogram in tqdm(wave_reader):
+        num_frames += spectrogram.shape[0]
+        mean += np.sum(spectrogram, 0)
+        std += np.sum(spectrogram**2, 0)
+    mean = mean / num_frames
+    std = np.sqrt(std / num_frames - mean**2)
+    with open(save_file, "wb") as f:
+        cmvn_dict = {"mean": mean, "std": std}
+        pickle.dump(cmvn_dict, f)
+    print("Totally processed {} frames".format(num_frames))
+    print("Global mean: {}".format(mean))
+    print("Global std: {}".format(std))
     
 def apply_cmvn(samp,cmvn_dict):
     '''
@@ -115,13 +118,13 @@ def apply_cmvn(samp,cmvn_dict):
 
       calculate: x = (x-mean)/std
     '''
-    return (samp-cmvn_dict['means'])/cmvn_dict['stds']
+    return (samp-cmvn_dict['mean'])/cmvn_dict['std']
 
 if __name__ == "__main__":
-    #kwargs = {'window':'hann', 'nfft':256, 'window_length':256, 'hop_length':64, 'center':False, 'is_mag':True, 'is_log':True}
-    #compute_cmvn("/home/likai/Desktop/create_scp/tr_mix.scp",'../cmvn.ark',**kwargs)
+    kwargs = {'window':'hann', 'nfft':256, 'window_length':256, 'hop_length':64, 'center':False, 'is_mag':True, 'is_log':True}
+    compute_cmvn("/home/likai/data1/create_scp/tr_mix.scp",'../cmvn.ark',**kwargs)
     #file = pickle.load(open('cmvn.ark','rb'))
     #print(file)
-    samp = read_wav('../1.wav')
-    print(compute_non_silent(samp))
+    #samp = read_wav('../1.wav')
+    #print(compute_non_silent(samp))
     

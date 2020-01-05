@@ -43,7 +43,7 @@ class DPCL(nn.Module):
             x = x.view(B,-1,self.D)
         else:
             # B x TF x D -> TF x D
-            x = torch.squeeze(x)
+            x = x.view(-1, self.D)
 
         return x
     

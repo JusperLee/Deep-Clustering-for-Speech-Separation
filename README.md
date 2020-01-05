@@ -34,3 +34,15 @@ python ./utils/util.py
 python train.py -opt ./option/train.yml
 ```
 
+## Inference steps
+1. Use the following command to start testing the model
+
+```shell
+python test.py -scp 1.scp -opt ./option/train.yml -save_file ./result
+```
+2. You can use the [this code](https://github.com/JusperLee/Calculate-SNR-SDR "this code") to calculate the SNR scores.
+
+
+## Thanks
+
+1. [Pytorch Template](https://github.com/victoresque/pytorch-template "Pytorch Template")
